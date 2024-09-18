@@ -13,42 +13,49 @@ import contact_img from '../../assests/Contact/Contact_Animations.png';
 import './Home.css';
 import Footer from "../../components/Footer";
 
-function Home(){
-    return(
+import bg_slider from '../../assests/Slider/bg_slide.png'
+
+import bg_about from '../../assests/About/bg_about.png'
+import bg_contact from '../../assests/Contact/bg_contact.png'
+
+function Home() {
+    return (
         <>
-            <Header/>
+            <div className="bg-no-repeat" style={{ backgroundImage: `url(${bg_slider})` }}>
+                <Header />
 
-            <div>
-            <div className='max-w-screen-2xl font-poppins flex justify-between pt-[144px] pl-[145px] 
-                       '>
-                <div className='pt-[60px] pb-[60px] pl-[43px] w-2/3'>
-                    <h1 className="font-semibold text-[#091156] text-[48px] leading-[60px] -tracking-[0.2px]">
-                        Clinic & beauty consultant
-                    </h1>
+                <div>
+                    <div className='max-w-screen-2xl font-poppins flex justify-between pt-[144px] pl-[145px] 
+           '>
+                        <div className='pt-[60px] pb-[60px] pl-[43px] w-2/3'>
+                            <h1 className="font-semibold text-[#091156] text-[48px] leading-[60px] -tracking-[0.2px]">
+                                Clinic & beauty consultant
+                            </h1>
 
 
-                    <p className='text-[16px] font-medium leading-[24px] tracking-[1.65px] text-[#091156]  pl-px pt-2'>
-                        It is a long established fact that a reader will be by the readable content of a page.
-                    </p>
+                            <p className='text-[16px] font-medium leading-[24px] tracking-[1.65px] text-[#091156]  pl-px pt-2'>
+                                It is a long established fact that a reader will be by the readable content of a page.
+                            </p>
 
-                    <div className='pt-[34px]'>
-                        <button className='w-[200px] h-[58.36px] rounded-[50px] bg-[#FF64AE] border-0 text-[16px] text-white tracking-[1.6px] font-semibold pl-[10px] pb-[2px] font-poppins pl-[2px]
-                        '>More Details</button>
+                            <div className='pt-[34px]'>
+                                <button className='w-[200px] h-[58.36px] rounded-[50px] bg-[#FF64AE] border-0 text-[16px] text-white tracking-[1.6px] font-semibold pl-[10px] pb-[2px] font-poppins pl-[2px]
+            '>More Details</button>
+                            </div>
+                        </div>
+
+                        <div className=' w-full pt-1 pl-[13px]'>
+                            <img className='' src={slider_img} alt='Logo' />
+                        </div>
+                    </div>
+
+                    <div className='flex justify-center items-center pt-[136px]'>
+                        <div className="w-[14.82px] h-[3.09px] bg-[#EEEEEE] rounded-[50px] mr-[5px]"></div>
+                        <div className="w-[25.31px] h-[8.15px] bg-[#414880] rounded-[50px]"></div>
+                        <div className="w-[14.82px] h-[3.09px] bg-[#EEEEEE] rounded-[50px] ml-[5px]"></div>
                     </div>
                 </div>
 
-                <div className=' w-full pt-1 pl-[13px]'>
-                    <img className='' src={slider_img} alt='Logo' />
-                </div>
             </div>
-
-            <div className='flex justify-center items-center pt-[136px]'>
-                <div className="w-[14.82px] h-[3.09px] bg-[#EEEEEE] rounded-[50px] mr-[5px]"></div>
-                <div className="w-[25.31px] h-[8.15px] bg-[#414880] rounded-[50px]"></div>
-                <div className="w-[14.82px] h-[3.09px] bg-[#EEEEEE] rounded-[50px] ml-[5px]"></div>
-            </div>
-            </div>
-
             <div className='max-w-screen-2xl font-poppins
             '>
                 <div className='text-center pt-[131px] max-w-[850px] m-0 m-auto'>
@@ -79,9 +86,10 @@ function Home(){
                 </div>
             </div>
 
-            <div className='max-w-screen-2xl font-poppins flex pt-[135px] pl-[150px] pr-[145px] 
-            '>
-            <div className='w-[80%] max-xl:text-center'>
+            <div className='max-w-screen-2xl font-poppins flex pt-[135px] pl-[150px] pr-[145px] bg-no-repeat bg-right
+            '
+            style={{ backgroundImage: `url(${bg_about})` }}>
+                <div className='w-[80%] max-xl:text-center'>
                     <h4 className='text-[16px] font-semibold leading-[20px] text-[#ff64ae]'>About Us</h4>
                     <h1 className='text-[36px] font-semibold leading-[45px] text-[#091156] pt-[11px] -tracking-[0.1px] whitespace-nowrap'>We are the best beauty clinic</h1>
                     <p className='text-[16px] font-normal leading-[24px] tracking-[1.6px] text-[#8b8b8b] max-w-[480px] pt-[19px] '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet. Egestas volutpat facilisi eu libero. Nunc, ipsum ornare mauris sit quam quis enim. Varius tellus in suspendisse placerat.</p>
@@ -106,11 +114,13 @@ function Home(){
                 </div>
             </div>
 
-            <Proteams/>
+            <Proteams />
 
 
-            <div className="max-w-screen-2xl font-poppins flex justify-between pt-[144px] pl-[150px] pr-[150px] 
-            ">
+            <div className="max-w-screen-2xl font-poppins flex justify-between pt-[144px] pl-[150px] pr-[150px]  bg-no-repeat
+            "
+            
+            style={{ backgroundImage: `url(${bg_contact})` }}>
                 <div className='pt-[158px] '>
                     <img src={contact_img} alt='abc'></img>
                 </div>
@@ -146,8 +156,8 @@ function Home(){
                 </div>
             </div>
 
-            <Footer/>
-            
+            <Footer />
+
         </>
     )
 }

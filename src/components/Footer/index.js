@@ -51,7 +51,7 @@ function Footer() {
                             </div>
 
                             <div className='max-lg:pt-[50px]'>
-                                <h3 className='text-[18px] font-semibold leading-[27px] tracking-[1.8px] text-white -mt-[16px] -ml-[2px]  '>Informations</h3>
+                                <h3 className='text-[18px] font-semibold leading-[27px] tracking-[1.5px] text-white -mt-[16px] -ml-[3px]  '>Informations</h3>
                                 <ul className='pt-[22px]' >
                                     <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none  '>Terms & conditions</List1>
                                     <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none '>Privacy policy</List1>

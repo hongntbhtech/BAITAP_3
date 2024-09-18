@@ -1,4 +1,4 @@
-
+import Footer from "../../components/Footer";
 import { Link } from 'react-router-dom';
 import logo from '../../assests/Header/Logo_Home2.png';
 import background from '../../assests/Slider/background_slider.png';
@@ -24,8 +24,14 @@ import img_blog_2 from '../../assests/Blog/unsplash_0_McYfdyEDA.png'
 import img_blog from '../../assests/Blog/unsplash_3ewkNkfJj2k.png'
 import img_blog_1 from '../../assests/Blog/unsplash_7tDGb3HrITg.png'
 
+import "./Home2.css";
+
+import img_service from '../../assests/Service/Vector.png'
+
+
 
 function Home2() {
+
     return (
         <>
             <div className='max-w-screen-2xl font-poppins'>
@@ -207,20 +213,36 @@ function Home2() {
                         </div>
                 </div>
 
-                <div className='flex w-[79.2%] mx-auto pt-[169px]'>
-                    <div>
+                <div className='flex justify-between w-[79.2%] mx-auto pt-[169px] pb-[60px]'>
+                    <div className='max-w-[391px]'>
                         <h1 className='font-semibold text-[36px] leading-[45px] text-[#091156] -tracking-[0.2px]'>Request call services</h1>
-                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit Contact Us.</p>
+                        <p className='font-normal text-[16px] leading-[24px] tracking-[1.6px] pt-[17px]'>Lorem ipsum dolor sit amet, consect adipiscing elit <span className='font-semibold text-[16px] leading-[24px] tracking-[1.6px] '> Contact Us.</span></p>
                     </div>
 
-                    <form>
-                        <input type='number' placeholder='Insert your phone number here ...'></input>
-                        <p>Toll free for our coverage areas.</p>
+                    <form className='pt-[14px]'>
+                        <div className='relative'>
+
+                            
+                        <input className=' w-[658px] h-[73px] rounded-[25px] border-[1px] border-[#D9DDFE] pl-[37px]' type='number' placeholder='Insert your phone number here ...'></input>
+
+                        
+                                <div className='top-0 right-0 absolute w-[113px] h-[73px] bg-[#FF64AE] rounded-r-[25px] '>
+                                        <img className='m-0 m-auto pt-[18px]' src={img_service} alt='abc'>
+                                        
+                                        </img>
+                                </div>
+                            </div>
+                       
+                        
+                        <p className='font-normal text-[12px] leading-[18px] tracking-[1.2px] text-[#8B8B8B] italic text-end pt-[8px]'>Toll free for our coverage areas.</p>
                     </form>
                 </div>
 
+                <Footer/>
 
             </div>
+
+         
 
         </>
     )
