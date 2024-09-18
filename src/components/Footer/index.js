@@ -13,6 +13,7 @@ import contact4 from '../../assests/Footer/youtube.png';
 import contact2 from '../../assests/Footer/twitter.png';
 
 import { List, List1 } from './FooterStyled'
+import { Link } from 'react-router-dom';
 
 
 function Footer() {
@@ -23,9 +24,14 @@ function Footer() {
                     <div className="relative  h-[705.34px] bg-no-repeat 2xl:bg-cover "
                       style={{ backgroundImage: `url(${footer_bg})` }}>
                         <div className='max-w-screen-2xl flex justify-between pt-[242px] w-[79.2%] mx-auto 
+                        max-xl:w-[85%] 
+                        max-lg:flex-wrap max-lg:pt-[100px] max-lg:w-[70%]
+                        max-md:w-[80%]
+                         max-sssm:w-[95%]
+                           2xl:w-[80%] 2xl:mx-auto
                         '>
-                            <div className='footer-1'>
-                                <img className='' src={footer_logo} alt='abc'></img>
+                            <div className='footer-1 max-lg:w-full max-lg:text-center'>
+                                <img className='max-lg:m-0 max-lg:m-auto' src={footer_logo} alt='abc'></img>
                                 <p className='text-[16px] font-semibold leading-[24px] tracking-[1.6px] text-[#d7dbff] indent-[32px] pt-[33px]'>
                                     Beautice <span className='p-children' style={{ fontSize: '16px', lineHeight: '24px', letterSpacing: '1.6px', fontWeight: 400 }}>
                                         is a Beauty Clinic WordPress Theme.
@@ -39,24 +45,24 @@ function Footer() {
                             </div>
 
         
-                            <div className='w-[13.4%] -mt-[14px] ' >
-                                <h3 className='text-[18px] font-semibold leading-[27px] tracking-[1.8px] text-white'>Pages</h3>
+                            <div className='w-[13.4%] -mt-[14px] max-lg:pt-[50px] max-lg:w-[30%] max-lg:mx-auto max-md:w-[40%] max-md:mx-auto' >
+                                <h3 className='text-[18px] font-semibold leading-[27px] tracking-[1.8px] text-white max-md:text-[14px]'>Pages</h3>
                                 <ul className='pt-[20px]'>
-                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none'>Home</List>
-                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none'>About</List>
-                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none'>Services</List>
-                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none'>Gallery</List>
-                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none '>Team</List>
+                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>Home</List>
+                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>About</List>
+                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>Services</List>
+                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>Gallery</List>
+                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>Team</List>
                                 </ul>
                             </div>
 
                             <div className='max-lg:pt-[50px]'>
-                                <h3 className='text-[18px] font-semibold leading-[27px] tracking-[1.5px] text-white -mt-[16px] -ml-[3px]  '>Informations</h3>
+                                <h3 className='text-[18px] font-semibold leading-[27px] tracking-[1.5px] text-white -mt-[16px] -ml-[3px]  max-md:text-[14px]'>Informations</h3>
                                 <ul className='pt-[22px]' >
-                                    <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none  '>Terms & conditions</List1>
-                                    <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none '>Privacy policy</List1>
-                                    <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none '>Blog</List1>
-                                    <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none '>Contact</List1>
+                                    <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none  max-md:text-[12px]'>Terms & conditions</List1>
+                                    <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>Privacy policy</List1>
+                                    <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>Blog</List1>
+                                    <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>Contact</List1>
                                 </ul>
                             </div>
     
@@ -64,16 +70,18 @@ function Footer() {
                         </div>
 
                         <div className='w-[95.5%] flex justify-end fixed bottom-[170px]'>
-                            <a href='http://localhost:3000/'>
+                            <Link to='./'>
                                 <div className='w-[36px] h-[36px] bg-[#ff64ae] rounded-[5px] flex justify-center items-center'>
                                     <img src={vector} alt='abc'></img>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className='max-w-screen-2xl flex justify-between w-[79.2%] mx-auto pt-[138px]
+                         max-xl:w-[85%] max-lg:pt-[80px]
+                        max-md:flex-col max-md:justify-center max-md:pt-[50px]
                         '>
-                            <div className='flex gap-[45px] max-lg:gap-[25px] '>
+                            <div className='flex gap-[45px] max-lg:gap-[25px] max-md:text-center max-md:m-0 max-md:m-auto'>
                                 <img src={contact1} alt='abc'></img>
                                 <img src={contact2} alt='abc'></img>
                                 <img src={contact3} alt='abc'></img>
@@ -83,7 +91,7 @@ function Footer() {
 
 
                             <div className="leading-[24px] tracking-[1.6px] text-[#d7dbff] -mt-[2px]
-                           
+                            max-md:text-center max-md:text-[12px]
                             ">
                                 <p>© AltDesain Studio 2021 - All right reserved.</p>
                             </div>
