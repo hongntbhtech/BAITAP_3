@@ -72,7 +72,7 @@ function Header() {
                         <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/about' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B] -ml-[6px]
                         max-lg:text-[14px]
                         '>About</Link></li>
-                        <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
+                        <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/service' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
                         max-lg:text-[14px]
                         '>Service</Link></li>
                         <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
