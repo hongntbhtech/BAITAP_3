@@ -11,6 +11,11 @@ module.exports = {
         'max-ssm': { 'max': '425px' },
         'max-sssm': { 'max': '375px' },
       },
+
+      boxShadow: {
+        // Service
+        'custom-hover': '0px 0px 50px 25px #f6f7ff',
+      },
     },
   },
   plugins: [],

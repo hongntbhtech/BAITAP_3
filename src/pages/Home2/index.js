@@ -89,6 +89,14 @@ function Home2() {
                                                     Home2
                                                 </Link>
                                             </li>
+
+                                            <li>
+                                        <Link to='/team' className='block px-4 py-2 text-base text-[#8B8B8B] hover:bg-[#FF64AE] hover:text-white rounded-md
+                                        max-lg:text-[14px]
+                                        '>
+                                            Team
+                                        </Link>
+                                    </li>
                                         </ul>
                                     </div>
                                 </li>
@@ -98,10 +106,10 @@ function Home2() {
                                 <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/service' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
                         max-lg:text-[14px]
                         '>Service</Link></li>
-                                <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
+                                <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/gallery' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
                         max-lg:text-[14px]
                         '>Gallery</Link></li>
-                                <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
+                                <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/blog' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
                         max-lg:text-[14px]
                         '>Blog</Link></li>
                                 <li className='pl-[8px] pt-[1px]'>
