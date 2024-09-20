@@ -90,7 +90,7 @@ function Header() {
                         max-lg:text-[14px]
                         '>Blog</Link></li>
                         <li className='pl-[8px] pt-[1px]'>
-                            <Link className='py-3.5 px-10 bg-[#FF64AE] rounded-full text-white text-base tracking-[1.6px] font-semibold
+                            <Link to='/contact' className='py-3.5 px-10 bg-[#FF64AE] rounded-full text-white text-base tracking-[1.6px] font-semibold
                             max-lg:text-[14px]
                             '>Contact</Link>
 

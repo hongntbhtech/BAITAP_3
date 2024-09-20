@@ -7,6 +7,7 @@ import Service from './pages/Service';
 import Gallery from './pages/Gallery';
 import Blog from './pages/Blog';
 import Team from './pages/Team';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
       <Route path='/gallery' element={<Gallery/>}/>
       <Route path='/team' element={<Team/>}/>
       <Route path='/blog' element={<Blog/>}/>
+
+      <Route path='/contact' element={<Contact/>}/>
     </Routes>
     </>
   );
