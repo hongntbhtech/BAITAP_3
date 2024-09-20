@@ -9,30 +9,43 @@ import img_contact2 from "../../assests/Contact/phone-alt.png"
 import img_contact3 from "../../assests/Contact/mail-bulk.png"
 
 import Footer from "../../components/Footer"
+
+import bg_contact1 from "../../assests/Contact/bg_contact1.png"
 function Contact(){
     return(
         <>
-        <div className="max-w-screen-2xl font-poppins">
+        <div className="max-w-screen-2xl font-poppins mx-auto">
             <Header/>
-
+            <div className="bg-no-repeat bg-cover w-full" style={{ backgroundImage: `url(${bg_contact1})` }}>
             <div className="max-w-[1140.33px] mx-auto pt-[117px]">
-                <div className="max-w-[1144px] mx-auto flex justify-between">
-                    <div className="max-w-[615px]">
-                        <h4 className="font-semibold text-[16px] text-[#FF64AE] leading-[20px]">Contact Us</h4>
-                        <h1 className="font-semibold text-[36px] text-[#091156] leading-[45px] pt-[12px] -tracking-[0.1px]">Contact service for our customers</h1>
+                <div className="max-w-[1144px] mx-auto flex justify-between
+                max-xxl:w-[93%]
+                max-xl:w-[85%]
+                max-lg:flex-col max-lg:text-center max-lg:items-center
+            
+                ">
+                    <div className="max-w-[615px]
+                    
+                    ">
+                        <h4 className="font-semibold text-[16px] text-[#FF64AE] leading-[20px] max-md:text-[14px]">Contact Us</h4>
+                        <h1 className="font-semibold text-[36px] text-[#091156] leading-[45px] pt-[12px] -tracking-[0.1px] max-md:text-[33px]">Contact service for our customers</h1>
                     </div>
 
                     <div className="max-w-[427px] pt-[30px]">
-                        <p className="font-normal text-[16px] text-[#8B8B8B] leading-[24px] tracking-[1.6px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+                        <p className="font-normal text-[16px] text-[#8B8B8B] leading-[24px] tracking-[1.6px] max-md:text-[14px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                     </div>
                 </div>
 
-                <div className="max-w-[1140.33px] mx-auto flex justify-between">
+                <div className="max-w-[1140.33px] mx-auto flex justify-between
+                 max-lg:flex-col max-lg:text-center max-lg:items-center
+                ">
                     <div className="pt-[133px]">
                         <img src={img_contact} alt="abc"></img>
                     </div>
 
-                    <div className="min-w-[520px]">
+                    <div className="min-w-[520px]
+                    max-md:min-w-[320px]
+                    ">
                     <form className='pt-[58px]'>
                         <div className='flex justify-between max-w-[520px]'>
                             <input className='w-[46.4%] h-[60px] rounded-[15px] border border-solid border-[#D9DDFE] pl-[23px]' type="text" placeholder="First name"></input>
@@ -57,6 +70,7 @@ function Contact(){
                     </div>
                     </div>
                 </div>
+                </div>
             </div>
 
             <div className="pt-[112px]">
@@ -70,22 +84,24 @@ function Contact(){
                     <p className="font-normal text-[16px] text-[#8B8B8B] leading-[24px] tracking-[1.6px] pt-[22px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</p>
                 </div>
 
-                <div className="max-w-[1038px] mx-auto flex justify-between pt-[98px]">
-                    <div className="max-w-[270px] min-h-[252px] text-center hover:shadow-custom-hover hover:min-w-[424px] min-h-[402px] rounded-[42px]">
+                <div className="max-w-[1038px] mx-auto flex justify-between pt-[98px]
+                 max-lg:flex-col max-lg:text-center max-lg:items-center
+                ">
+                    <div className="max-w-[270px] min-h-[252px] text-center hover:shadow-custom-hover hover:min-w-[424px] min-h-[402px] rounded-[42px] hover:max-sssm:min-w-[320px]">
                         <img className="m-0 m-auto pt-[79px]" src={img_contact1} alt="abc"></img>
                         <h4 className="font-semibold text-[16px] text-[#FF64AE] leading-[20px] pt-[47px]">Address</h4>
                         <h1 className="font-semibold text-[24px] text-[#091156] leading-[30px] pt-[12px] -tracking-[0.2px]">101 Baker Street, NY</h1>
                         <p className="font-normal text-[14px] text-[#8B8B8B] leading-[21px] tracking-[1.6px] pt-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit</p>
                     </div>
 
-                    <div className="max-w-[270px] min-h-[252px] text-center hover:shadow-custom-hover hover:min-w-[424px] min-h-[402px] rounded-[42px]">
+                    <div className="max-w-[270px] min-h-[252px] text-center hover:shadow-custom-hover hover:min-w-[424px] min-h-[402px] rounded-[42px] hover:max-sssm:min-w-[320px]">
                         <img className="m-0 m-auto pt-[79px]" src={img_contact2} alt="abc"></img>
                         <h4 className="font-semibold text-[16px] text-[#FF64AE] leading-[20px] pt-[47px]">Phone</h4>
                         <h1 className="font-semibold text-[24px] text-[#091156] leading-[30px] pt-[12px] -tracking-[0.2px]">+896 120 5889</h1>
                         <p className="font-normal text-[14px] text-[#8B8B8B] leading-[21px] tracking-[1.6px] pt-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit</p>
                     </div>
 
-                    <div className="max-w-[270px] min-h-[252px] text-center hover:shadow-custom-hover hover:min-w-[424px] min-h-[402px] rounded-[42px]">
+                    <div className="max-w-[270px] min-h-[252px] text-center hover:shadow-custom-hover hover:min-w-[424px] min-h-[402px] rounded-[42px] hover:max-sssm:min-w-[320px]">
                         <img className="m-0 m-auto pt-[79px]" src={img_contact3} alt="abc"></img>
                         <h4 className="font-semibold text-[16px] text-[#FF64AE] leading-[20px] pt-[47px]">Mail</h4>
                         <h1 className="font-semibold text-[24px] text-[#091156] leading-[30px] pt-[12px] -tracking-[0.2px]">mail@company.com</h1>
@@ -95,8 +111,10 @@ function Contact(){
                 </div>
             </div>
 
-            <Footer/>
+            
         </div>
+
+        <Footer/>
         </>
     )
 }

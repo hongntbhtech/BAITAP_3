@@ -27,14 +27,17 @@ import Footer from "../../components/Footer";
 function Team(){
     return(
         <>
-        <div className="max-w-screen-2xl font-poppins ">
+        <div className="max-w-screen-2xl font-poppins mx-auto">
             <Header/>
 
             <div className='max-w-[1085px] mx-auto pt-[118px]
             max-md:w-[90%] max-md:mx-auto
             2xl:w-[80%] 2xl:mx-auto
             '>
-                <div className='text-center max-w-[800px] m-0 m-auto pr-[79px]'>
+                <div className='text-center max-w-[800px] m-0 m-auto pr-[79px]
+                
+                max-lg:pr-0
+                '>
                     <h4 className='text-[16px] font-semibold leading-[20px] text-[#ff64ae]
                     max-md:text-[14px]'>Our Team</h4>
                     <h1 className='text-[36px] font-semibold leading-[45px] text-[#091156] pt-[12px]
@@ -87,14 +90,19 @@ function Team(){
                 </div>
             </div>
 
-            <div className="max-w-[1290.1px] mx-auto  pt-[154px] pb-[125px]">
+            <div className="max-w-[1290.1px] mx-auto  pt-[151px] pb-[125px]
+             max-lg:pl-[30px] max-lg:pr-[30px]
+            ">
                 <div className="text-center">
                     <h4 className="ld text-[16px] text-[#FF64AE] leadfont-semiboing-[20px]">Assistance Team</h4>
                     <h1 className="font-semibold text-[36px] text-[#091156] leading-[45px] pt-[12px] -tracking-[0.1px]">Meet the pro assistance</h1>
                     <p className="font-normal text-[16px] text-[#8B8B8B] leading-[24px] tracking-[1.6px] pt-[25px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</p>
                 </div>
 
-                <div className="max-w-[1004px] m-0 m-auto flex justify-between pt-[113px] ml-[75px]">
+                <div className="max-w-[1004px] m-0 m-auto flex justify-between pt-[113px] ml-[75px]
+                max-lg:flex-col max-lg:items-center max-lg:ml-0
+
+                ">
                     <img src={img_team1} alt="abc"></img>
                     <div className="max-w-[434px] pt-[64px]">
                         <h5 className="font-semibold text-[18px] leading-[22.5px] text-[#091156]">Lina Gustav / <span className="font-normal italic text-[14px] leading-[17.5px] text-[#CACACA]">Pharmacist</span></h5>
@@ -102,15 +110,21 @@ function Team(){
                     </div>
                 </div>
 
-                <div className="max-w-[1004px] m-0 m-auto flex justify-between pt-[79px] ml-[75px]">
+                <div className="max-w-[1004px] m-0 m-auto flex justify-between pt-[79px] ml-[75px]
+                 max-lg:flex-col max-lg:items-center max-lg:ml-0
+            
+                ">
                     <img src={img_team2} alt="abc"></img>
-                    <div className="max-w-[434px] pt-[64px]">
+                    <div className="max-w-[434px] pt-[64px]
+                    ">
                         <h5 className="font-semibold text-[18px] leading-[22.5px] text-[#091156]">Adam White / <span className="font-normal italic text-[14px] leading-[17.5px] text-[#CACACA]">Finance</span></h5>
                         <p className="font-normal text-[16px] leading-[24px] tracking-[1.6px] pt-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id magnis at placerat pulvinar euismod neque.</p>
                     </div>
                 </div>
 
-                <div className="max-w-[1004px] m-0 m-auto flex justify-between pt-[79px] ml-[75px]">
+                <div className="max-w-[1004px] m-0 m-auto flex justify-between pt-[79px] ml-[75px]
+                 max-lg:flex-col max-lg:items-center max-lg:ml-0
+                ">
                     <img src={img_team3} alt="abc"></img>
                     <div className="max-w-[434px] pt-[64px]">
                         <h5 className="font-semibold text-[18px] leading-[22.5px] text-[#091156]">Jane Doe /  <span className="font-normal italic text-[14px] leading-[17.5px] text-[#CACACA]">Marketer</span></h5>
@@ -120,13 +134,19 @@ function Team(){
             </div>
 
             <div className="h-[529px] bg-no-repeat" style={{ backgroundImage: `url(${bg_team})` }}>
-                <div className="max-w-[680px] mx-auto text-center pt-[180px]">
-                    <h1 className="font-semibold text-[36px] leading-[45px] text-[#ffffff] max-w-[500px] mx-auto pl-[23px] -tracking-[0.3px] ">Customer satisfaction is our main goal</h1>
+                <div className="max-w-[680px] mx-auto text-center pt-[180px]
+                 max-lg:pl-[30px] max-lg:pr-[30px]
+                ">
+                    <h1 className="font-semibold text-[36px] leading-[45px] text-[#ffffff] max-w-[500px] mx-auto pl-[23px] -tracking-[0.3px
+                    max-lg:pl-0
+                    ">Customer satisfaction is our main goal</h1>
                     <p className="font-normal text-[16px] leading-[24px] tracking-[1.6px] text-[#CACACA] pt-[8px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                 </div>
             </div>
 
-            <div className="max-w-[1140px] mx-auto pt-[119px] pb-[15px]">
+            <div className="max-w-[1140px] mx-auto pt-[119px] pb-[15px]
+                  max-lg:pl-[30px] max-lg:pr-[30px]
+            ">
                 <div className="text-center">
                     <h4 className="text-[16px] font-semibold leading-[20px] text-[#ff64ae]">Our Testimonials</h4>
                     <h1 className="text-[36px] font-semibold leading-[45px] text-[#091156] pt-[12px] -tracking-[0.2px] ">What our customer says</h1>
@@ -152,8 +172,10 @@ function Team(){
 
             </div>
 
-            <Footer/>
+       
         </div>
+
+             <Footer/>
         </>
     )
 }

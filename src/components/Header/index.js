@@ -13,7 +13,6 @@ function Header() {
         <>
             <header className='max-w-screen-2xl font-poppins flex justify-between mx-auto w-[79.8%] pt-[41px]
                 max-lg:w-[90%]
-               2xl:w-[60%] 
             '>
                 <div className=''>
                     <img className='max-lg:w-[100%]' src={logo} alt="abc"></img>
