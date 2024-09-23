@@ -41,9 +41,9 @@ function Home2() {
 
     return (
         <>
-            <div className='max-w-screen-2xl font-poppins'>
+            <div className='max-w-screen-2xl font-poppins mx-auto'>
 
-                <div className='h-[918px]' style={{ backgroundImage: `url(${background})` }}>
+                <div className='h-[918px] bg-no-repeat' style={{ backgroundImage: `url(${background})` }}>
                     <header className='flex justify-between mx-auto w-[79.8%] pt-[41px]
                     max-lg:w-[90%]
                     2xl:w-[60%] 
@@ -237,7 +237,7 @@ function Home2() {
                 </div>
 
 
-                <div className='h-[697.5px]
+                <div className='h-[697.5px] bg-no-repeat
 
                 ' style={{ backgroundImage: `url(${bg_choose})` }}>
 
