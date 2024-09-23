@@ -369,10 +369,11 @@ function Home2() {
                     </form>
                 </div>
 
-                <Footer/>
+               
 
             </div>
 
+            <Footer/>
 
 
         </>
