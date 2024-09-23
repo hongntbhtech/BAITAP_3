@@ -25,24 +25,31 @@ import Footer from "../../components/Footer";
 function Blog() {
     return (
         <>
-            <div>
+            <div className="max-w-screen-2xl font-poppins mx-auto">
                 <div className="pb-[28px]">
                     <Header />
                 </div>
 
                 <div className="h-[285px] bg-no-repeat" style={{ backgroundImage: `url(${bg_blog})` }}>
-                    <div className="max-w-[1142px] mx-auto flex justify-between pt-[122px]">
+                    <div className="max-w-[1142px] mx-auto flex justify-between pt-[122px]
+                    max-lg:pl-[30px] max-lg:pr-[30px]
+                    ">
                         <h1 className="font-semibold text-[36px] leading-[45px] text-[#ffffff]">Blog</h1>
                         <h5 className="font-medium text-[16px] leading-[24px] tracking-[1.6px] text-[#D9D9D9] pt-[10px]">Home • Blog</h5>
                     </div>
                 </div>
 
-                <div className="flex max-w-[1140px] mx-auto justify-between">
+                <div className="flex max-w-[1140px] mx-auto justify-between
+                 max-xl:flex-col max-xl:items-center max-xl:max-w-none
+                       max-xl:pl-[30px] max-xl:pr-[30px]
+                ">
                     <div className=" pt-[108px]">
                         <div className="max-w-[730px] min-h-[953px] bg-[#F2F4FF] rounded-[50px]">
                             <img className="" src={img_blog} alt="abc"></img>
 
-                            <div className="max-w-[578px] mx-auto pt-[55.5px]">
+                            <div className="max-w-[578px] mx-auto pt-[55.5px]
+                            max-lg:pl-[30px] max-lg:pr-[30px]
+                            ">
                                 <div className="flex max-w-[146px] justify-between">
                                     <img src={img_folder} alt="abc"></img>
                                     <h4 className="font-semibold text-[16px] text-[#FF64AE] leading-[20px] pt-[5px]">Consultation</h4>
@@ -72,7 +79,9 @@ function Blog() {
                         <div className="max-w-[730px] min-h-[953px] bg-[#F2F4FF] rounded-[50px] mt-[133px]">
                             <img className="" src={img_blog_1} alt="abc"></img>
 
-                            <div className="max-w-[578px] mx-auto pt-[55.5px]">
+                            <div className="max-w-[578px] mx-auto pt-[55.5px]
+                            max-lg:pl-[30px] max-lg:pr-[30px]
+                            ">
                                 <div className="flex max-w-[98px] justify-between">
                                     <img src={img_folder} alt="abc"></img>
                                     <h4 className="font-semibold text-[16px] text-[#FF64AE] leading-[20px] pt-[5px]">Beauty</h4>
@@ -101,7 +110,9 @@ function Blog() {
                         <div className="max-w-[730px] min-h-[953px] bg-[#F2F4FF] rounded-[50px] mt-[133px]">
                             <img className="" src={img_blog_2} alt="abc"></img>
 
-                            <div className="max-w-[578px] mx-auto pt-[55.5px]">
+                            <div className="max-w-[578px] mx-auto pt-[55.5px]
+                            max-lg:pl-[30px] max-lg:pr-[30px]
+                            ">
                                 <div className="flex max-w-[135px] justify-between">
                                     <img src={img_folder} alt="abc"></img>
                                     <h4 className="font-semibold text-[16px] text-[#FF64AE] leading-[20px] pt-[5px]">Treatments</h4>
@@ -126,12 +137,12 @@ function Blog() {
                         </div>
 
                         
-                            <div className="max-w-[125px] gap-[30px]  mx-auto flex justify-between pt-[105px]">
+                            <div className="max-w-[110px]  ml-auto  flex justify-between pt-[105px] mr-[97px]">
 
 
-                                <p>1</p>
-                                <p>2</p>
-                                <p>3</p>
+                                <p className="font-semibold text-[16px] leading-[20px] text-center text-[#C7C7C7]">1</p>
+                                <p className="font-semibold text-[16px] leading-[20px] text-center text-[#C7C7C7]">2</p>
+                                <p className="font-semibold text-[16px] leading-[20px] text-center text-[#C7C7C7]">3</p>
 
 
                             </div>
@@ -140,7 +151,9 @@ function Blog() {
 
                     <div className="pt-[108px]">
                         <div className="relative ">
-                            <input className="w-[350px] h-[65px] rounded-[25px] border-[1px] border-[#D9DDFE] pl-[26px] pb-[2px]" type="number" placeholder='Search here ...'></input>
+                            <input className="w-[350px] h-[65px] rounded-[25px] border-[1px] border-[#D9DDFE] pl-[26px] pb-[2px]
+                            max-md:w-[250px]
+                            " type="number" placeholder='Search here ...'></input>
                             <div className='top-0 right-0 absolute w-[76px] h-[65px] bg-[#172176] rounded-r-[40px] '>
                                 <img className='m-0 m-auto pt-[18px]' src={img_search} alt='abc'>
 
@@ -241,7 +254,9 @@ function Blog() {
                         <div className="max-w-[350px] min-h-[213px] rounded-[25px] bg-[#F2F4FF] mt-[83px]">
                             <h5 className="font-semibold text-[16px] leading-[20px] text-[#091156] pt-[58px] pl-[48px]">Social Connect</h5>
 
-                            <div className="flex pl-[54px] pt-[38px] gap-[39px]">
+                            <div className="flex pl-[54px] pt-[38px] gap-[39px]
+                            max-md:pl-[10px]
+                            ">
 
                                 <img className="" src={contact1} alt="abc"></img>
 
@@ -255,7 +270,7 @@ function Blog() {
                     </div>
                 </div>
 
-                <div className="-mt-[11.5px]">
+                <div className="-mt-[7px]">
                     <Footer />
                 </div>
 

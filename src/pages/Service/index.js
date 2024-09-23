@@ -16,7 +16,7 @@ import Footer from "../../components/Footer";
 function Service(){
     return(
         <>
-                <div className="max-w-screen-2xl font-poppins">
+                <div className="max-w-screen-2xl font-poppins mx-auto">
                 <Header/>
                 <div className="max-w-[1100px] mx-auto pt-[118px]
                  max-lg:pl-[30px] max-lg:pr-[30px]
