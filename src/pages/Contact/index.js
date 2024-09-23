@@ -14,8 +14,11 @@ import bg_contact1 from "../../assests/Contact/bg_contact1.png"
 function Contact(){
     return(
         <>
+        <div className="">
         <div className="max-w-screen-2xl font-poppins mx-auto">
             <Header/>
+
+            </div>
             <div className="bg-no-repeat bg-cover w-full" style={{ backgroundImage: `url(${bg_contact1})` }}>
             <div className="max-w-[1140.33px] mx-auto pt-[117px]">
                 <div className="max-w-[1144px] mx-auto flex justify-between
@@ -40,7 +43,7 @@ function Contact(){
                  max-lg:flex-col max-lg:text-center max-lg:items-center
                 ">
                     <div className="pt-[133px]">
-                        <img src={img_contact} alt="abc"></img>
+                        <img className="" src={img_contact} alt="abc"></img>
                     </div>
 
                     <div className="min-w-[520px]
@@ -73,7 +76,7 @@ function Contact(){
                 </div>
             </div>
 
-            <div className="pt-[112px]">
+            <div className="pt-[112px] 2xl:m-0 2xl:m-auto flex justify-center">
                 <img src={map} alt="abc"></img>
             </div>
 

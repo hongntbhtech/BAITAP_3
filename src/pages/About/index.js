@@ -22,23 +22,27 @@ import Footer from "../../components/Footer";
 function About() {
     return (
         <>
+            <div className="">
             <div className="max-w-screen-2xl font-poppins mx-auto">
                 <Header />
+                </div>
 
                 <div className="w-[79.2%] mx-auto pt-[117px] max-h-[976px]">
-                    <div className="max-w-[732px]">
+                    <div className="max-w-[732px] 2xl:max-w-none 2xl:text-center">
                         <h4 className="font-semibold text-[16px] text-[#FF64AE] leading-[20px] max-md:text-[14px]">About</h4>
                         <h1 className="font-semibold text-[36px] text-[#091156] leading-[45px] pt-[12px] -tracking-[0.1px] max-md:text-[33px]">We are a leading beauty clinic that has been around since 2002</h1>
-                        <p className="font-normal text-[16px] text-[#8B8B8B] leading-[24px] tracking-[1.6px] max-w-[680px] pt-[20px] max-md:text-[14px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+                        <p className="font-normal text-[16px] text-[#8B8B8B] leading-[24px] tracking-[1.6px] max-w-[680px] pt-[20px] max-md:text-[14px]
+                        2xl:max-w-none 2xl:text-center
+                        ">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                     </div>
 
                     <div className="pt-[16px]">
                         <div className=" relative">
                             <img className=" max-w-none -ml-[73px] object-cover
                             max-xxl:max-w-full max-xxl:ml-0
-                            
+                            2xl: m-0 2xl:m-auto
                             " src={img_about} alt="abc"></img>
-                            <img className="absolute top-[46%] left-1/2 w-12 h-12 transform -translate-x-1/2 -translate-y-1/2 w-[7.5%] h-auto" src={play_button} alt="abc"></img>
+                            <img className=" absolute top-[46%] left-1/2 w-12 h-12 transform -translate-x-1/2 -translate-y-1/2 w-[7.5%] h-auto" src={play_button} alt="abc"></img>
                         </div>
                     </div>
                 </div>
@@ -47,7 +51,7 @@ function About() {
                     <Proteams />
                 </div>
 
-                <div className="text-center pt-[164px] pb-[175px]
+                <div className="text-center pt-[164px] pb-[175px] bg-no-repeat 2xl:bg-cover
                  max-lg:pl-[30px] max-lg:pr-[30px]
                 "
 
@@ -58,7 +62,7 @@ function About() {
                     <p className="font-normal text-[16px] leading-[24px] text-[#CACACA] tracking-[1.6px] max-w-[680px] m-0 m-auto pt-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                 </div>
 
-                <div className='flex mx-auto w-[79%] justify-between pt-[123px]
+                <div className='max-w-screen-2xl font-poppins max-auto flex mx-auto w-[79%] justify-between pt-[123px]
                  max-lg:flex-col max-lg:items-center
                 '>
                     <div className="pt-[28px] pl-[54px]
@@ -79,7 +83,7 @@ function About() {
                 </div>
 
 
-                <div className='flex mx-auto w-[79%] justify-between pt-[142px]
+                <div className='max-w-screen-2xl font-poppins max-auto flex mx-auto w-[79%] justify-between pt-[142px]
                  max-lg:flex-col max-lg:items-center
                 '>
 
@@ -100,7 +104,7 @@ function About() {
                     </div>
                 </div>
 
-                <div className="pt-[126px] pb-[52px]">
+                <div className=" pt-[126px] pb-[52px]">
                     <div className="max-w-[848px] text-center m-0 m-auto pr-[24px]
                     max-lg:pr-0
                     " >

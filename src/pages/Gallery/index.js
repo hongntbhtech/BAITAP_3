@@ -17,8 +17,10 @@ import Footer from "../../components/Footer";
 function Gallery() {
     return (
         <>
+            <div className="">
             <div className="max-w-screen-2xl font-poppins mx-auto">
                 <Header />
+                </div>
 
                 <div className="max-w-[1140px] mx-auto pt-[118px] pb-[124px]">
                     <div className="flex justify-between max-w-[1120px]
@@ -73,7 +75,7 @@ function Gallery() {
                     </div>
                 </div>
 
-                <div className="h-[628px]" style={{ backgroundImage: `url(${bg_gallery})` }}>
+                <div className="h-[628px] bg-no-repeat 2xl:bg-cover" style={{ backgroundImage: `url(${bg_gallery})` }}>
                     <div className="max-w-[555px] text-center mx-auto pt-[172px]
                     max-lg:pl-[30px] max-lg:pr-[30px]
                     ">

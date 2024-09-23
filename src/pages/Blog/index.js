@@ -25,12 +25,12 @@ import Footer from "../../components/Footer";
 function Blog() {
     return (
         <>
-            <div className="max-w-screen-2xl font-poppins mx-auto">
-                <div className="pb-[28px]">
+            <div className="">
+                <div className="max-w-screen-2xl font-poppins mx-auto pb-[28px]">
                     <Header />
                 </div>
 
-                <div className="h-[285px] bg-no-repeat" style={{ backgroundImage: `url(${bg_blog})` }}>
+                <div className="h-[285px] bg-no-repeat 2xl:bg-cover" style={{ backgroundImage: `url(${bg_blog})` }}>
                     <div className="max-w-[1142px] mx-auto flex justify-between pt-[122px]
                     max-lg:pl-[30px] max-lg:pr-[30px]
                     ">
@@ -270,11 +270,13 @@ function Blog() {
                     </div>
                 </div>
 
-                <div className="-mt-[7px]">
+                
+            </div>
+
+            <div className="-mt-[7px]">
                     <Footer />
                 </div>
 
-            </div>
         </>
     )
 }

@@ -41,9 +41,9 @@ function Home2() {
 
     return (
         <>
-            <div className='max-w-screen-2xl font-poppins mx-auto'>
+            <div className=''>
 
-                <div className='h-[918px] bg-no-repeat' style={{ backgroundImage: `url(${background})` }}>
+                <div className=' h-[918px] bg-no-repeat 2xl:bg-cover' style={{ backgroundImage: `url(${background})` }}>
                     <header className='flex justify-between mx-auto w-[79.8%] pt-[41px]
                     max-lg:w-[90%]
                     2xl:w-[60%] 
@@ -62,7 +62,7 @@ function Home2() {
 
                     md:flex-row flex-col md:items-center md:gap-[45.2px] gap-8 max-md:text-center'>
                                 <li className='relative group max-md:border-b max-md:border-gray-300 max-md:pb-2'>
-                                    <Link to='/' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B] whitespace-nowrap
+                                    <Link to='' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#ffffff] whitespace-nowrap
                             
                             max-lg:text-[14px]
                             
@@ -76,14 +76,14 @@ function Home2() {
                             '>
                                         <ul>
                                             <li>
-                                                <Link to='/' className='block px-4 py-2 text-base text-[#8B8B8B] hover:bg-[#FF64AE] hover:text-white rounded-md
+                                                <Link to='/' className='block px-4 py-2 text-base text-[#ffffff] hover:bg-[#FF64AE] hover:text-white rounded-md
                                         max-lg:text-[14px]
                                         '>
                                                     Home1
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link to='/home' className='block px-4 py-2 text-base text-[#8B8B8B] hover:bg-[#FF64AE] hover:text-white rounded-md
+                                                <Link to='/home' className='block px-4 py-2 text-base text-[#ffffff] hover:bg-[#FF64AE] hover:text-white rounded-md
                                         max-lg:text-[14px]
                                         '>
                                                     Home2
@@ -91,7 +91,7 @@ function Home2() {
                                             </li>
 
                                             <li>
-                                        <Link to='/team' className='block px-4 py-2 text-base text-[#8B8B8B] hover:bg-[#FF64AE] hover:text-white rounded-md
+                                        <Link to='/team' className='block px-4 py-2 text-base text-[#ffffff] hover:bg-[#FF64AE] hover:text-white rounded-md
                                         max-lg:text-[14px]
                                         '>
                                             Team
@@ -100,16 +100,16 @@ function Home2() {
                                         </ul>
                                     </div>
                                 </li>
-                                <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/about' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B] -ml-[6px]
+                                <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/about' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#ffffff] -ml-[6px]
                         max-lg:text-[14px]
                         '>About</Link></li>
-                                <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/service' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
+                                <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/service' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#ffffff]
                         max-lg:text-[14px]
                         '>Service</Link></li>
-                                <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/gallery' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
+                                <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/gallery' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#ffffff]
                         max-lg:text-[14px]
                         '>Gallery</Link></li>
-                                <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/blog' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
+                                <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/blog' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#ffffff]
                         max-lg:text-[14px]
                         '>Blog</Link></li>
                                 <li className='pl-[8px] pt-[1px]'>
@@ -126,7 +126,7 @@ function Home2() {
                         </div>
                     </header>
 
-                    <div className=" flex w-[79.2%] mx-auto pt-[204px] justify-between
+                    <div className=" max-w-screen-2xl max-auto flex w-[79.2%] mx-auto pt-[204px] justify-between
                       max-lg:flex-col max-lg:items-center
                       max-lg:pt-[100px]
                     ">
@@ -161,7 +161,7 @@ function Home2() {
                     </div>
                 </div>
 
-                <div className='flex mx-auto w-[79.2%] justify-between pt-[159px]
+                <div className='max-w-screen-2xl max-auto flex mx-auto w-[79.2%] justify-between pt-[159px]
                  max-lg:flex-col max-lg:items-center
                 '>
                     <div className="">
@@ -237,11 +237,11 @@ function Home2() {
                 </div>
 
 
-                <div className='h-[697.5px] bg-no-repeat
+                <div className='h-[697.5px] bg-no-repeat 2xl:bg-cover
 
                 ' style={{ backgroundImage: `url(${bg_choose})` }}>
 
-                    <div className=' flex pt-[290px] w-[78.6%] mx-auto justify-between
+                    <div className='max-w-screen-2xl max-auto flex pt-[290px] w-[78.6%] mx-auto justify-between
                     max-lg:flex-col max-lg:items-center
                     max-lg:pt-[150px]
                     '>
@@ -338,7 +338,7 @@ function Home2() {
                         </div>
                 </div>
 
-                <div className='flex justify-between w-[79.2%] mx-auto pt-[169px] pb-[60px]
+                <div className='max-w-screen-2xl max-auto flex justify-between w-[79.2%] mx-auto pt-[169px] pb-[60px]
                 max-xl:flex-col max-xl:items-center max-xl:pt-0
                 
                 '>
@@ -367,10 +367,7 @@ function Home2() {
                         
                         <p className='font-normal text-[12px] leading-[18px] tracking-[1.2px] text-[#8B8B8B] italic text-end pt-[8px]'>Toll free for our coverage areas.</p>
                     </form>
-                </div>
-
-               
-
+                </div>  
             </div>
 
             <Footer/>

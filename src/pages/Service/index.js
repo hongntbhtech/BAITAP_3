@@ -16,8 +16,10 @@ import Footer from "../../components/Footer";
 function Service(){
     return(
         <>
+                <div className="">
                 <div className="max-w-screen-2xl font-poppins mx-auto">
                 <Header/>
+                </div>
                 <div className="max-w-[1100px] mx-auto pt-[118px]
                  max-lg:pl-[30px] max-lg:pr-[30px]
                 ">
@@ -108,7 +110,7 @@ function Service(){
                     </div>
                 </div>
 
-                <div className='h-[529px]' style={{ backgroundImage: `url(${bg_service1})` }}>
+                <div className='h-[529px] bg-no-repeat 2xl:bg-cover' style={{ backgroundImage: `url(${bg_service1})` }}>
                     <div className="max-w-[1140px] mx-auto flex justify-between pt-[183px]
                      max-lg:flex-col max-lg:items-center
                  max-lg:pl-[30px] max-lg:pr-[30px] 

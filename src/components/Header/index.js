@@ -19,14 +19,14 @@ function Header() {
                 </div>
                 <div className={`w-[60.5%] pt-[17px]
                 max-lg:w-[70%]
-                md:static absolute md:min-h-fit min-h-[350px] left-0 top-[16%] max-md:justify-center max-md:items-center max-md:bg-black
-                ${click ? 'block' : 'hidden'} md:block` }>
+                lg:static absolute lg:min-h-fit min-h-[350px] left-0 top-[16%] max-lg:justify-center max-lg:items-center max-lg:bg-black
+                ${click ? 'block' : 'hidden'} lg:block` }>
                     <ul onClick={() => setClick(false)} className='flex gap-[45px]
                     max-xl:gap-[25px]
                     max-lg:gap-[18px]
                     max-md:none
 
-                    md:flex-row flex-col md:items-center md:gap-[45.2px] gap-8 max-md:text-center
+                    lg:flex-row flex-col lg:items-center lg:gap-[45.2px] gap-8 max-lg:text-center
 
                    
                     
@@ -37,8 +37,8 @@ function Header() {
                         
                        </li> */}
 
-                        <li className='relative group max-md:border-b max-md:border-gray-300 max-md:pb-2'>
-                            <Link to='/' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B] whitespace-nowrap
+                        <li className='relative group max-lg:border-b max-lg:border-gray-300 max-lg:pb-2'>
+                            <Link to='' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B] whitespace-nowrap
                             
                             max-lg:text-[14px]
                             
@@ -76,16 +76,16 @@ function Header() {
                                 </ul>
                             </div>
                         </li>
-                        <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/about' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B] -ml-[6px]
+                        <li className="max-lg:border-b max-lg:border-gray-300 max-lg:pb-2"><Link to='/about' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B] -ml-[6px]
                         max-lg:text-[14px]
                         '>About</Link></li>
-                        <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/service' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
+                        <li className="max-lg:border-b max-lg:border-gray-300 max-lg:pb-2"><Link to='/service' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
                         max-lg:text-[14px]
                         '>Service</Link></li>
-                        <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/gallery' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
+                        <li className="max-lg:border-b max-lg:border-gray-300 max-lg:pb-2"><Link to='/gallery' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
                         max-lg:text-[14px]
                         '>Gallery</Link></li>
-                        <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/blog' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
+                        <li className="max-lg:border-b max-lg:border-gray-300 max-lg:pb-2"><Link to='/blog' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
                         max-lg:text-[14px]
                         '>Blog</Link></li>
                         <li className='pl-[8px] pt-[1px]'>
@@ -98,7 +98,7 @@ function Header() {
                     </ul>
                 </div>
 
-                <div className='text-base mt-[5px] md:hidden max-md:block ml-3 cursor-pointer max-md:pt-[13px]' onClick={handleClick}>
+                <div className='text-base mt-[5px] lg:hidden max-md:block ml-3 cursor-pointer max-md:pt-[13px]' onClick={handleClick}>
                     {click ? <FaTimes /> : <FaAlignJustify />}
                 </div>
             </header>

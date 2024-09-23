@@ -27,8 +27,12 @@ import Footer from "../../components/Footer";
 function Team(){
     return(
         <>
+        <div className="">
+
         <div className="max-w-screen-2xl font-poppins mx-auto">
             <Header/>
+
+            </div>
 
             <div className='max-w-[1085px] mx-auto pt-[118px]
             max-md:w-[90%] max-md:mx-auto
@@ -133,7 +137,7 @@ function Team(){
                 </div>
             </div>
 
-            <div className="h-[529px] bg-no-repeat" style={{ backgroundImage: `url(${bg_team})` }}>
+            <div className="h-[529px] bg-no-repeat 2xl:bg-cover" style={{ backgroundImage: `url(${bg_team})` }}>
                 <div className="max-w-[680px] mx-auto text-center pt-[180px]
                  max-lg:pl-[30px] max-lg:pr-[30px]
                 ">
