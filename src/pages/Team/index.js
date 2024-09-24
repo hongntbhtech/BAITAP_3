@@ -1,4 +1,4 @@
-import Header from "../../components/Header";
+// import Header from "../../components/Header";
 import actor1 from '../../assests/Proteams/unsplash_pTrhfmj2jDA.png';
 import actor2 from '../../assests/Proteams/unsplash_FVh_yqLR9eA.png';
 import actor3 from '../../assests/Proteams/unsplash_mEZ3PoFGs_k.png';
@@ -21,16 +21,21 @@ import img_team9 from '../../assests/Team/star.png'
 import img_team10 from '../../assests/Team/star.png'
 import img_team11 from '../../assests/Team/star.png'
 
+import LayoutHeader from '../../layout/LayoutHeader'
+import LayoutFooter from '../../layout/LayoutFooter'
+
 
 import { ProteamsBoxMain, ImgBox, Heading,Heading1, Para, SocialMedia, SocialMedia1} from './TeamStyled'
-import Footer from "../../components/Footer";
+// import Footer from "../../components/Footer";
 function Team(){
     return(
         <>
         <div className="">
 
         <div className="max-w-screen-2xl font-poppins mx-auto">
-            <Header/>
+            {/* <Header/> */}
+
+            <LayoutHeader></LayoutHeader>
 
             </div>
 
@@ -179,7 +184,8 @@ function Team(){
        
         </div>
 
-             <Footer/>
+             {/* <Footer/> */}
+             <LayoutFooter></LayoutFooter>
         </>
     )
 }

@@ -1,4 +1,5 @@
-import Footer from "../../components/Footer";
+// import Footer from "../../components/Footer";
+import LayoutFooter from '../../layout/LayoutFooter'
 import { Link } from 'react-router-dom';
 import logo from '../../assests/Header/Logo_Home2.png';
 import background from '../../assests/Slider/background_slider.png';
@@ -53,18 +54,19 @@ function Home2() {
                         </div>
                         <div className={`w-[60.5%] pt-[17px]
                 max-lg:w-[70%]
-                md:static absolute md:min-h-fit min-h-[350px] left-0 top-[16%] max-md:justify-center max-md:items-center max-md:bg-black
-                ${click ? 'block' : 'hidden'} md:block`}>
+                lg:static absolute lg:min-h-fit min-h-[350px] left-0 top-[16%] max-lg:justify-center max-lg:items-center max-lg:bg-[#E4E7FF]
+                ${click ? 'block' : 'hidden'} lg:block`}>
                             <ul onClick={() => setClick(false)} className='flex gap-[45px]
                     max-xl:gap-[25px]
                     max-lg:gap-[18px]
                     max-md:none
 
-                    md:flex-row flex-col md:items-center md:gap-[45.2px] gap-8 max-md:text-center'>
+                    lg:flex-row flex-col lg:items-center lg:gap-[45.2px] gap-8 max-lg:text-center'>
                                 <li className='relative group max-md:border-b max-md:border-gray-300 max-md:pb-2'>
                                     <Link to='' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#ffffff] whitespace-nowrap
                             
                             max-lg:text-[14px]
+                            max-lg:text-[#091156]
                             
                             '>
                                         Home +
@@ -78,6 +80,7 @@ function Home2() {
                                             <li>
                                                 <Link to='/' className='block px-4 py-2 text-base text-[#ffffff] hover:bg-[#FF64AE] hover:text-white rounded-md
                                         max-lg:text-[14px]
+                                        max-lg:text-[#091156]
                                         '>
                                                     Home1
                                                 </Link>
@@ -85,6 +88,7 @@ function Home2() {
                                             <li>
                                                 <Link to='/home' className='block px-4 py-2 text-base text-[#ffffff] hover:bg-[#FF64AE] hover:text-white rounded-md
                                         max-lg:text-[14px]
+                                        max-lg:text-[#091156]
                                         '>
                                                     Home2
                                                 </Link>
@@ -93,6 +97,7 @@ function Home2() {
                                             <li>
                                         <Link to='/team' className='block px-4 py-2 text-base text-[#ffffff] hover:bg-[#FF64AE] hover:text-white rounded-md
                                         max-lg:text-[14px]
+                                        max-lg:text-[#091156]
                                         '>
                                             Team
                                         </Link>
@@ -102,26 +107,31 @@ function Home2() {
                                 </li>
                                 <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/about' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#ffffff] -ml-[6px]
                         max-lg:text-[14px]
+                        max-lg:text-[#091156]
                         '>About</Link></li>
                                 <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/service' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#ffffff]
                         max-lg:text-[14px]
+                        max-lg:text-[#091156]
                         '>Service</Link></li>
                                 <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/gallery' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#ffffff]
                         max-lg:text-[14px]
+                        max-lg:text-[#091156]
                         '>Gallery</Link></li>
                                 <li className="max-md:border-b max-md:border-gray-300 max-md:pb-2"><Link to='/blog' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#ffffff]
                         max-lg:text-[14px]
+                        max-lg:text-[#091156]
                         '>Blog</Link></li>
                                 <li className='pl-[8px] pt-[1px]'>
                                     <Link to='/contact' className='py-3.5 px-10 bg-[#FF64AE] rounded-full text-white text-base tracking-[1.6px] font-semibold
                             max-lg:text-[14px]
+                            max-lg:text-[#091156]
                             '>Contact</Link>
 
 
                                 </li>
                             </ul>
                         </div>
-                        <div className='text-base mt-[5px] md:hidden max-md:block ml-3 cursor-pointer max-md:pt-[13px]' onClick={handleClick}>
+                        <div className='text-base mt-[5px] lg:hidden max-lg:block ml-3 cursor-pointer max-md:pt-[13px]' onClick={handleClick}>
                             {click ? <FaTimes /> : <FaAlignJustify />}
                         </div>
                     </header>
@@ -315,21 +325,21 @@ function Home2() {
                         <div className='flex justify-between max-w-[1139px] m-0 m-auto pt-[87px]
                         max-xl:flex-col max-xl:items-center
                         '>
-                            <BlogBoxMain>
+                            <BlogBoxMain className="max-lg:pl-[30px] max-lg:pr-[30px]">
                                 <ImgBoxBlog src={img_blog} alt='abc'></ImgBoxBlog>
                                 <HeadingBlog>How much does a consultation cost at our clinic?</HeadingBlog>
                                 <ParagraphBlog>A wonderful serenity has taken possession of my entire soul, like these sweet mornings ...</ParagraphBlog>
                                 <Button>Learn more</Button>
                             </BlogBoxMain>
 
-                            <BlogBoxMain>
+                            <BlogBoxMain className="max-lg:pl-[30px] max-lg:pr-[30px]">
                                 <ImgBoxBlog src={img_blog_1} alt='abc'></ImgBoxBlog>
                                 <HeadingBlog>Watch out! don't choose the wrong beauty product</HeadingBlog>
                                 <ParagraphBlog>A wonderful serenity has taken possession of my entire soul, like these sweet mornings ...</ParagraphBlog>
                                 <Button>Learn more</Button>
                             </BlogBoxMain>
 
-                            <BlogBoxMain>
+                            <BlogBoxMain className="max-lg:pl-[30px] max-lg:pr-[30px]">
                                 <ImgBoxBlog src={img_blog_2} alt='abc'></ImgBoxBlog>
                                 <HeadingBlog>About skin care you need to know</HeadingBlog>
                                 <ParagraphBlog>A wonderful serenity has taken possession of my entire soul, like these sweet mornings ...</ParagraphBlog>
@@ -370,7 +380,9 @@ function Home2() {
                 </div>  
             </div>
 
-            <Footer/>
+            {/* <Footer/> */}
+
+            <LayoutFooter></LayoutFooter>
 
 
         </>

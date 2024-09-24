@@ -1,4 +1,4 @@
-import Header from "../../components/Header";
+// import Header from "../../components/Header";
 
 import img_gallery1 from "../../assests/Gallery/unsplash_FVh_yqLR9eA.png"
 import img_gallery2 from "../../assests/Gallery/unsplash_3ewkNkfJj2k.png"
@@ -12,20 +12,24 @@ import img_gallery9 from "../../assests/Gallery/unsplash_4SUyx4KQ5Ik.png"
 
 import bg_gallery from "../../assests/Gallery/unsplash_eflLpWC1Geo.png"
 import play_button from "../../assests/Slider/play_button.png"
-import Footer from "../../components/Footer";
+// import Footer from "../../components/Footer";
+
+import LayoutHeader from '../../layout/LayoutHeader'
+import LayoutFooter from '../../layout/LayoutFooter'
 
 function Gallery() {
     return (
         <>
-            <div className="">
+            <div className="max-xl:pl-[15px] max-xl:pr-[15px]">
             <div className="max-w-screen-2xl font-poppins mx-auto">
-                <Header />
+                {/* <Header /> */}
+                <LayoutHeader></LayoutHeader>
                 </div>
 
                 <div className="max-w-[1140px] mx-auto pt-[118px] pb-[124px]">
                     <div className="flex justify-between max-w-[1120px]
                        max-lg:flex-col max-lg:items-center max-lg:max-w-none
-                       max-lg:pl-[30px] max-lg:pr-[30px]
+                      max-lg:pl-[15px] max-lg:pr-[15px]
                     ">
                         <div className="max-w-[615px]">
                             <h4 className="font-semibold text-[16px] leading-[20px] text-[#FF64AE]">Our Gallery</h4>
@@ -42,7 +46,7 @@ function Gallery() {
 
                     <div className="flex justify-between pt-[90px]
                        max-lg:flex-col max-lg:items-center
-                       max-lg:pl-[30px] max-lg:pr-[30px]
+                       max-lg:pl-[15px] max-lg:pr-[15px]
                     ">
                         <img src={img_gallery1} alt="abc"></img>
                         <img src={img_gallery2} alt="abc"></img>
@@ -51,7 +55,7 @@ function Gallery() {
 
                     <div className="flex justify-between pt-[37px]
                        max-lg:flex-col max-lg:items-center
-                       max-lg:pl-[30px] max-lg:pr-[30px]
+                       max-lg:pl-[15px] max-lg:pr-[15px]
                     ">
                         <img src={img_gallery4} alt="abc"></img>
                         <img src={img_gallery5} alt="abc"></img>
@@ -60,7 +64,7 @@ function Gallery() {
 
                     <div className="flex justify-between pt-[37px]
                        max-lg:flex-col max-lg:items-center
-                       max-lg:pl-[30px] max-lg:pr-[30px]
+                      max-lg:pl-[15px] max-lg:pr-[15px]
                     ">
                         <img src={img_gallery7} alt="abc"></img>
                         <img src={img_gallery8} alt="abc"></img>
@@ -69,7 +73,7 @@ function Gallery() {
 
                     <div className="max-w-[660px] pt-[68px]
                      max-lg:flex-col max-lg:items-center max-lg:max-w-none
-                       max-lg:pl-[30px] max-lg:pr-[30px]
+                       max-lg:pl-[15px] max-lg:pr-[15px]
                     ">
                         <p className="font-normal text-[16px] leading-[24px] tracking-[1.6px] text-[#8B8B8B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim, <span className="font-semibold text-[16px] leading-[24px] tracking-[1.6px] text-[#091156]">our teams</span>.</p>
                     </div>
@@ -77,7 +81,7 @@ function Gallery() {
 
                 <div className="h-[628px] bg-no-repeat 2xl:bg-cover" style={{ backgroundImage: `url(${bg_gallery})` }}>
                     <div className="max-w-[555px] text-center mx-auto pt-[172px]
-                    max-lg:pl-[30px] max-lg:pr-[30px]
+                  max-lg:pl-[15px] max-lg:pr-[15px]
                     ">
                         <h1 className="font-semibold text-[36px] leading-[45px] text-[#ffffff]">Watch the video tour</h1>
                         <p className="font-normal text-[16px] leading-[24px] tracking-[1.6px] text-[#CACACA] pt-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
@@ -89,7 +93,7 @@ function Gallery() {
 
                 <div className="max-w-[1140px] flex justify-between mx-auto pt-[122px] pb-[30px]
                  max-lg:flex-col max-lg:items-center max-lg:max-w-none
-                       max-lg:pl-[30px] max-lg:pr-[30px]
+                       max-lg:pl-[15px] max-lg:pr-[15px]
                 ">
                     <div className="max-w-[642px]
                      max-lg:flex-col max-lg:items-center max-lg:max-w-none max-lg:text-center
@@ -113,7 +117,8 @@ function Gallery() {
 
                 
             </div>
-            <Footer/>
+            {/* <Footer/> */}
+            <LayoutFooter></LayoutFooter>
         </>
     )
 }

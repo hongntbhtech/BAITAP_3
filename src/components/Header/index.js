@@ -19,7 +19,7 @@ function Header() {
                 </div>
                 <div className={`w-[60.5%] pt-[17px]
                 max-lg:w-[70%]
-                lg:static absolute lg:min-h-fit min-h-[350px] left-0 top-[16%] max-lg:justify-center max-lg:items-center max-lg:bg-black
+                lg:static absolute lg:min-h-fit min-h-[350px] left-0 top-[15.9%] max-lg:justify-center max-lg:items-center max-lg:bg-[#E4E7FF]
                 ${click ? 'block' : 'hidden'} lg:block` }>
                     <ul onClick={() => setClick(false)} className='flex gap-[45px]
                     max-xl:gap-[25px]
@@ -41,6 +41,8 @@ function Header() {
                             <Link to='' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B] whitespace-nowrap
                             
                             max-lg:text-[14px]
+
+                            max-lg:text-[#091156]
                             
                             '>
                                 Home +
@@ -54,6 +56,7 @@ function Header() {
                                     <li>
                                         <Link to='/' className='block px-4 py-2 text-base text-[#8B8B8B] hover:bg-[#FF64AE] hover:text-white rounded-md
                                         max-lg:text-[14px]
+                                        max-lg:text-[#091156]
                                         '>
                                             Home1
                                         </Link>
@@ -61,6 +64,7 @@ function Header() {
                                     <li>
                                         <Link to='/home' className='block px-4 py-2 text-base text-[#8B8B8B] hover:bg-[#FF64AE] hover:text-white rounded-md
                                         max-lg:text-[14px]
+                                        max-lg:text-[#091156]
                                         '>
                                             Home2
                                         </Link>
@@ -69,6 +73,7 @@ function Header() {
                                     <li>
                                         <Link to='/team' className='block px-4 py-2 text-base text-[#8B8B8B] hover:bg-[#FF64AE] hover:text-white rounded-md
                                         max-lg:text-[14px]
+                                        max-lg:text-[#091156]
                                         '>
                                             Team
                                         </Link>
@@ -78,15 +83,19 @@ function Header() {
                         </li>
                         <li className="max-lg:border-b max-lg:border-gray-300 max-lg:pb-2"><Link to='/about' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B] -ml-[6px]
                         max-lg:text-[14px]
+                        max-lg:text-[#091156]
                         '>About</Link></li>
                         <li className="max-lg:border-b max-lg:border-gray-300 max-lg:pb-2"><Link to='/service' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
                         max-lg:text-[14px]
+                        max-lg:text-[#091156]
                         '>Service</Link></li>
                         <li className="max-lg:border-b max-lg:border-gray-300 max-lg:pb-2"><Link to='/gallery' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
                         max-lg:text-[14px]
+                        max-lg:text-[#091156]
                         '>Gallery</Link></li>
                         <li className="max-lg:border-b max-lg:border-gray-300 max-lg:pb-2"><Link to='/blog' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]
                         max-lg:text-[14px]
+                        max-lg:text-[#091156]
                         '>Blog</Link></li>
                         <li className='pl-[8px] pt-[1px]'>
                             <Link to='/contact' className='py-3.5 px-10 bg-[#FF64AE] rounded-full text-white text-base tracking-[1.6px] font-semibold

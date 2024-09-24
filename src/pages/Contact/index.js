@@ -1,4 +1,4 @@
-import Header from "../../components/Header";
+// import Header from "../../components/Header";
 import img_contact from "../../assests/Contact/Contact_Animations1.png"
 import "./Contact.css";
 
@@ -8,15 +8,19 @@ import img_contact1 from "../../assests/Contact/map-marker-alt.png"
 import img_contact2 from "../../assests/Contact/phone-alt.png"
 import img_contact3 from "../../assests/Contact/mail-bulk.png"
 
-import Footer from "../../components/Footer"
+// import Footer from "../../components/Footer"
 
 import bg_contact1 from "../../assests/Contact/bg_contact1.png"
+
+import LayoutHeader from '../../layout/LayoutHeader'
+import LayoutFooter from '../../layout/LayoutFooter'
 function Contact(){
     return(
         <>
         <div className="">
         <div className="max-w-screen-2xl font-poppins mx-auto">
-            <Header/>
+            {/* <Header/> */}
+            <LayoutHeader></LayoutHeader>
 
             </div>
             <div className="bg-no-repeat bg-cover w-full" style={{ backgroundImage: `url(${bg_contact1})` }}>
@@ -49,7 +53,9 @@ function Contact(){
                     <div className="min-w-[520px]
                     max-md:min-w-[320px]
                     ">
-                    <form className='pt-[58px]'>
+                    <form className='pt-[58px]
+                    max-lg:pl-[15px] max-lg:pr-[15px]
+                    '>
                         <div className='flex justify-between max-w-[520px]'>
                             <input className='w-[46.4%] h-[60px] rounded-[15px] border border-solid border-[#D9DDFE] pl-[23px]' type="text" placeholder="First name"></input>
                             <input className='w-[46.4%] h-[60px] rounded-[15px] border border-solid border-[#D9DDFE] pl-[25px]' type="text" placeholder="Last name"></input>
@@ -117,7 +123,8 @@ function Contact(){
             
         </div>
 
-        <Footer/>
+        {/* <Footer/> */}
+        <LayoutFooter></LayoutFooter>
         </>
     )
 }

@@ -1,4 +1,4 @@
-import Header from "../../components/Header";
+// import Header from "../../components/Header";
 import img_service1 from "../../assests/Service/unsplash_5TJ0Hoy5FLY.png"
 import img_service2 from "../../assests/Service/unsplash_ZOT2Mewzmh8.png"
 import img_service3 from "../../assests/Service/unsplash_gzfIO69Q6eM.png"
@@ -12,16 +12,20 @@ import bg_service1 from "../../assests/Service/unsplash_NPjNtTExSJ4.png"
 
 import play_button from "../../assests/Slider/play_button.png"
 
-import Footer from "../../components/Footer";
+// import Footer from "../../components/Footer";
+
+import LayoutHeader from '../../layout/LayoutHeader'
+import LayoutFooter from '../../layout/LayoutFooter'
 function Service(){
     return(
         <>
-                <div className="">
+                <div className="max-xl:pl-[15px] max-xl:pr-[15px]">
                 <div className="max-w-screen-2xl font-poppins mx-auto">
-                <Header/>
+                {/* <Header/> */}
+                <LayoutHeader></LayoutHeader>
                 </div>
                 <div className="max-w-[1100px] mx-auto pt-[118px]
-                 max-lg:pl-[30px] max-lg:pr-[30px]
+                 max-lg:pl-[15px] max-lg:pr-[15px]
                 ">
                     <div className="text-center">
                         <h4 className="font-semibold text-[16px] text-[#FF64AE] leading-[20px] max-md:text-[14px]">Our Services</h4>
@@ -31,9 +35,10 @@ function Service(){
 
                     <div className="flex justify-between pt-[74px]
                      max-lg:flex-col max-lg:items-center
+                     
                     ">
-                        <img src={img_service1} alt="abc"></img>
-                        <img className="max-lg:pt-[20px]" src={img_service2} alt="abc"></img> 
+                        <img className="object-cover" src={img_service1} alt="abc"></img>
+                        <img className="object-cover max-lg:pt-[20px]" src={img_service2} alt="abc"></img> 
                     </div>
 
                     <div className="flex justify-between pt-[68px]
@@ -46,7 +51,7 @@ function Service(){
 
                 <div className='flex mx-auto max-w-[1137px] justify-between pt-[141px]
                 max-lg:flex-col max-lg:items-center
-                 max-lg:pl-[30px] max-lg:pr-[30px]
+                 max-lg:pl-[15px] max-lg:pr-[15px]
                 '>
                     <div className="">
                         <img className="" src={img_service5} alt="abc"></img>
@@ -68,7 +73,7 @@ function Service(){
 
                 <div className='flex mx-auto max-w-[1137px] justify-between pt-[92px]
                  max-lg:flex-col max-lg:items-center
-                 max-lg:pl-[30px] max-lg:pr-[30px]
+                 max-lg:pl-[15px] max-lg:pr-[15px]
                 '>
                     <div className='max-w-[475px] pt-[29px]
                      max-lg:w-full max-lg:text-center max-lg:pt-[30px]
@@ -90,7 +95,7 @@ function Service(){
 
                 <div className='flex mx-auto max-w-[1137px] justify-between pt-[92px] pb-[130px]
                  max-lg:flex-col max-lg:items-center
-                 max-lg:pl-[30px] max-lg:pr-[30px]
+                 max-lg:pl-[15px] max-lg:pr-[15px]
                 '>
                     <div className="">
                         <img className="" src={img_service7} alt="abc"></img>
@@ -113,7 +118,7 @@ function Service(){
                 <div className='h-[529px] bg-no-repeat 2xl:bg-cover' style={{ backgroundImage: `url(${bg_service1})` }}>
                     <div className="max-w-[1140px] mx-auto flex justify-between pt-[183px]
                      max-lg:flex-col max-lg:items-center
-                 max-lg:pl-[30px] max-lg:pr-[30px] 
+                 max-lg:pl-[15px] max-lg:pr-[15px] 
                  max-lg:pt-[150px]
                  max-ssm:pt-[10px]
                     ">
@@ -156,7 +161,7 @@ function Service(){
                     </div>
 
                      <div className="max-w-[821px] mx-auto pt-[52px]
-                      max-lg:pl-[30px] max-lg:pr-[30px]
+                      max-lg:pl-[15px] max-lg:pr-[15px]
                      ">
                             <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna</p>
                             <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B] pt-[21px]">porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla</p>
@@ -182,7 +187,8 @@ function Service(){
               
                 </div>
 
-                <Footer/>
+                {/* <Footer/> */}
+                <LayoutFooter></LayoutFooter>
         </>
     )
 }

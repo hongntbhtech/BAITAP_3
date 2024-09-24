@@ -1,4 +1,4 @@
-import Header from "../../components/Header";
+// import Header from "../../components/Header";
 
 import bg_blog from "../../assests/Blog/unsplash_QA9fRIi6sFw.png"
 
@@ -20,19 +20,24 @@ import contact3 from '../../assests/Blog/insta.png';
 import contact2 from '../../assests/Blog/linkedin-in.png';
 
 // import circle from '../../assests/Blog/Ellipse.png'
-import Footer from "../../components/Footer";
+// import Footer from "../../components/Footer";
+
+import LayoutHeader from '../../layout/LayoutHeader'
+import LayoutFooter from '../../layout/LayoutFooter'
+
 
 function Blog() {
     return (
         <>
             <div className="">
                 <div className="max-w-screen-2xl font-poppins mx-auto pb-[28px]">
-                    <Header />
+                    {/* <Header /> */}
+                    <LayoutHeader></LayoutHeader>
                 </div>
 
                 <div className="h-[285px] bg-no-repeat 2xl:bg-cover" style={{ backgroundImage: `url(${bg_blog})` }}>
                     <div className="max-w-[1142px] mx-auto flex justify-between pt-[122px]
-                    max-lg:pl-[30px] max-lg:pr-[30px]
+                    max-xl:pl-[30px] max-xl:pr-[30px]
                     ">
                         <h1 className="font-semibold text-[36px] leading-[45px] text-[#ffffff]">Blog</h1>
                         <h5 className="font-medium text-[16px] leading-[24px] tracking-[1.6px] text-[#D9D9D9] pt-[10px]">Home • Blog</h5>
@@ -149,7 +154,9 @@ function Blog() {
                         
                     </div>
 
-                    <div className="pt-[108px]">
+                    <div className="pt-[108px] max-xl:flex max-xl:justify-between flex-wrap max-xl:mx-auto
+                    max-md:mx-auto max-md:justify-center
+                    ">
                         <div className="relative ">
                             <input className="w-[350px] h-[65px] rounded-[25px] border-[1px] border-[#D9DDFE] pl-[26px] pb-[2px]
                             max-md:w-[250px]
@@ -192,7 +199,11 @@ function Blog() {
 
                         </div>
 
-                        <div className="max-w-[350px] min-h-[250px] rounded-[25px] bg-[#F2F4FF] mt-[83px] pt-[58px] pl-[50px]">
+                        
+                        <div className="max-w-[350px] min-h-[250px] rounded-[25px] bg-[#F2F4FF] mt-[83px] pt-[58px] pl-[50px]
+                        max-xl:pl-[10px]
+                        max-xl:min-w-[250px]
+                        ">
                             <h5 className="font-semibold text-[16px] leading-[20px] text-[#091156]">Categories</h5>
 
                             <div className="pt-[22px]">
@@ -250,6 +261,7 @@ function Blog() {
 
                         </div>
 
+                       
 
                         <div className="max-w-[350px] min-h-[213px] rounded-[25px] bg-[#F2F4FF] mt-[83px]">
                             <h5 className="font-semibold text-[16px] leading-[20px] text-[#091156] pt-[58px] pl-[48px]">Social Connect</h5>
@@ -266,15 +278,14 @@ function Blog() {
                             </div>
                         </div>
 
+                        </div>
+
 
                     </div>
                 </div>
-
-                
-            </div>
-
             <div className="-mt-[7px]">
-                    <Footer />
+                    {/* <Footer /> */}
+                    <LayoutFooter></LayoutFooter>
                 </div>
 
         </>

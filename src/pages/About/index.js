@@ -1,4 +1,4 @@
-import Header from "../../components/Header";
+// import Header from "../../components/Header";
 
 import img_about from "../../assests/About/unsplash_DE6rYp1nAho.png"
 import play_button from "../../assests/About/Play_button.png"
@@ -17,17 +17,23 @@ import logo3 from '../../assests/Client/LOGO3.png'
 import logo4 from '../../assests/Client/LOGO4.png'
 import logo5 from '../../assests/Client/LOGO5.png'
 
-import Footer from "../../components/Footer";
+// import Footer from "../../components/Footer";
+
+import LayoutHeader from '../../layout/LayoutHeader'
+import LayoutFooter from '../../layout/LayoutFooter'
 
 function About() {
     return (
         <>
             <div className="">
             <div className="max-w-screen-2xl font-poppins mx-auto">
-                <Header />
+                {/* <Header /> */}
+                <LayoutHeader></LayoutHeader>
                 </div>
 
-                <div className="w-[79.2%] mx-auto pt-[117px] max-h-[976px]">
+                <div className="w-[79.2%] mx-auto pt-[117px] max-h-[976px]
+                
+                ">
                     <div className="max-w-[732px] 2xl:max-w-none 2xl:text-center">
                         <h4 className="font-semibold text-[16px] text-[#FF64AE] leading-[20px] max-md:text-[14px]">About</h4>
                         <h1 className="font-semibold text-[36px] text-[#091156] leading-[45px] pt-[12px] -tracking-[0.1px] max-md:text-[33px]">We are a leading beauty clinic that has been around since 2002</h1>
@@ -53,6 +59,7 @@ function About() {
 
                 <div className="text-center pt-[164px] pb-[175px] bg-no-repeat 2xl:bg-cover
                  max-lg:pl-[30px] max-lg:pr-[30px]
+                 max-ssm:pt-[100px]
                 "
 
                     style={{ backgroundImage: `url(${bg_slogan})` }}
@@ -128,7 +135,8 @@ function About() {
 
             </div>
 
-            <Footer/>
+            {/* <Footer/> */}
+            <LayoutFooter></LayoutFooter>
         </>
     )
 }
