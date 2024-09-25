@@ -11,6 +11,7 @@ import Gallery from './pages/Gallery';
 import Blog from './pages/Blog';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
+import Login from './pages/Login';
 
 // Create the Redux store
 const store = createStore(rootReducer);
@@ -27,6 +28,8 @@ function App() {
         <Route path='/team' element={<Team />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/contact' element={<Contact />} />
+
+        <Route path='/login' element={<Login/>}/>
       </Routes>
     </Provider>
   );
