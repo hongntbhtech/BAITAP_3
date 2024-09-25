@@ -17,6 +17,12 @@ import { Link } from 'react-router-dom';
 
 
 function Footer() {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth', // Smooth scroll
+        });
+    };
     return (
         <>
             <footer className='font-poppins relative'>
@@ -70,7 +76,7 @@ function Footer() {
                         </div>
 
                         <div className='w-[95.5%] flex justify-end fixed bottom-[170px]'>
-                            <Link to='/' >
+                            <Link onClick={scrollToTop} >
                                 <div className='w-[36px] h-[36px] bg-[#ff64ae] rounded-[5px] flex justify-center items-center'>
                                     <img src={vector} alt='abc'></img>
                                 </div>
