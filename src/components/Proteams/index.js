@@ -9,10 +9,7 @@ import { ProteamsBoxMain, ImgBox, Heading,Heading1, Para, SocialMedia, SocialMed
 function Proteams(){
     return(
         <>
-            <div className='max-w-screen-2xl font-poppins 
-            max-md:w-[90%] max-md:mx-auto
-            2xl:w-[80%] 2xl:mx-auto
-            '>
+            <div className='max-w-[1133px] mx-auto font-poppins pl-[24px] pr-[24px] -mt-[17px]'>
                 <div className='text-center pt-[71px] max-w-[850px] m-0 m-auto'>
                     <h4 className='text-[16px] font-semibold leading-[20px] text-[#ff64ae]
                     max-md:text-[14px]'>Professional Teams</h4>
@@ -25,10 +22,11 @@ function Proteams(){
                     '>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</p>
                 </div>
 
-                <div className='flex justify-between max-w-[1085px] m-0 m-auto pt-[114px]
-                 max-xl:flex-col max-xl:items-center
+                <div className='flex flex-wrap justify-between max-w-[1085px] m-0 m-auto pt-[114px]
+                 max-xl:justify-center
+                 max-xl:gap-[30px]
                 '>
-                    <ProteamsBoxMain className='hover:shadow-custom-hover hover:min-w-[424px] rounded-[42px]'>
+                    <ProteamsBoxMain className='hover:shadow-custom-hover hover:min-w-[424px] rounded-[42px] max-md:hover:shadow-none max-md:hover:min-w-[initial]'>
                         <ImgBox src={actor1} alt='abc'></ImgBox>
                         <Heading>Surgeon</Heading>
                         <Heading1>Briyan Nevalli</Heading1>
@@ -40,7 +38,7 @@ function Proteams(){
                         </SocialMedia>
                     </ProteamsBoxMain>
 
-                    <ProteamsBoxMain className='hover:shadow-custom-hover hover:min-w-[424px] rounded-[42px]'>
+                    <ProteamsBoxMain className='hover:shadow-custom-hover hover:min-w-[424px] rounded-[42px] max-md:hover:shadow-none max-md:hover:min-w-[initial]'>
                         <ImgBox src={actor2} alt='abc'></ImgBox>
                         <Heading>Dermatologist</Heading>
                         <Heading1>Bella sebastian</Heading1>
@@ -52,7 +50,7 @@ function Proteams(){
                         </SocialMedia>
                     </ProteamsBoxMain>
 
-                    <ProteamsBoxMain className='hover:shadow-custom-hover hover:min-w-[424px] rounded-[42px]'>
+                    <ProteamsBoxMain className='hover:shadow-custom-hover hover:min-w-[424px] rounded-[42px] max-md:hover:shadow-none max-md:hover:min-w-[initial]'>
                         <ImgBox src={actor3} alt='abc'></ImgBox>
                         <Heading>Stylist expert</Heading>
                         <Heading1>Lilly Adams</Heading1>

@@ -11,14 +11,15 @@ function Header() {
 
     return (
         <>
-            <header className='max-w-screen-2xl font-poppins flex justify-between mx-auto w-[79.8%] pt-[41px]
-                max-lg:w-[90%]
+            <header className='max-w-screen-2xl font-poppins mx-auto
+               
             '>
+                <div className='max-w-[1188px] mx-auto flex pl-[20px] pr-[24px] justify-between pt-[41px]'>
                 <div className=''>
                     <img className='max-lg:w-[100%]' src={logo} alt="abc"></img>
                 </div>
-                <div className={`w-[60.5%] pt-[17px]
-                max-lg:w-[70%]
+                <div className={`pt-[17px]
+                
                 lg:static absolute lg:min-h-fit min-h-[350px] left-0 top-[15.9%] max-lg:justify-center max-lg:items-center max-lg:bg-[#E4E7FF]
                 ${click ? 'block' : 'hidden'} lg:block` }>
                     <ul onClick={() => setClick(false)} className='flex gap-[45px]
@@ -109,6 +110,7 @@ function Header() {
 
                 <div className='text-base mt-[5px] lg:hidden max-md:block ml-3 cursor-pointer max-md:pt-[13px]' onClick={handleClick}>
                     {click ? <FaTimes /> : <FaAlignJustify />}
+                </div>
                 </div>
             </header>
         </>

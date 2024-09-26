@@ -31,7 +31,7 @@ function About() {
                 <LayoutHeader></LayoutHeader>
                 </div>
 
-                <div className="w-[79.2%] mx-auto pt-[117px] max-h-[976px]
+                <div className="max-w-[1188px] pl-[24px] pr-[24px] mx-auto pt-[117px] max-h-[976px]
                 
                 ">
                     <div className="max-w-[732px] 2xl:max-w-none 2xl:text-center">
@@ -53,7 +53,7 @@ function About() {
                     </div>
                 </div>
 
-                <div className="pb-[151px]">
+                <div className="mt-[19px] pb-[151px]">
                     <Proteams />
                 </div>
 
@@ -69,8 +69,9 @@ function About() {
                     <p className="font-normal text-[16px] leading-[24px] text-[#CACACA] tracking-[1.6px] max-w-[680px] m-0 m-auto pt-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                 </div>
 
-                <div className='max-w-screen-2xl font-poppins max-auto flex mx-auto w-[79%] justify-between pt-[123px]
+                <div className='max-w-[1185px] font-poppins mx-auto flex justify-between pt-[123px] pl-[24px] pr-[24px]
                  max-lg:flex-col max-lg:items-center
+                 max-md:pt-[20px]
                 '>
                     <div className="pt-[28px] pl-[54px]
                     max-lg:pl-0
@@ -82,7 +83,7 @@ function About() {
                     max-lg:w-full max-lg:text-center max-lg:pt-[30px]
                     '>
                         <h4 className='text-[16px] font-semibold leading-[20px] text-[#ff64ae]'>Our Vision</h4>
-                        <h1 className='text-[36px] font-semibold leading-[45px] text-[#091156] pt-[14px] -tracking-[0.2px] '>Be the best and go international</h1>
+                        <h1 className='text-[36px] font-semibold leading-[45px] text-[#091156] pt-[14px]  '>Be the best and go international</h1>
                         <p className='text-[16px] font-normal leading-[24px] tracking-[1.6px] text-[#8b8b8b] max-w-[480px] pt-[11px] max-lg:max-w-none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet. Egestas volutpat facilisi eu libero.</p>
                         <p className="text-[16px] font-normal leading-[24px] tracking-[1.6px] text-[#8b8b8b] max-w-[480px] pt-[25px] max-lg:max-w-none"> Nunc, ipsum ornare mauris sit quam quis enim. Varius tellus in suspendisse placerat.</p>
                         
@@ -90,8 +91,9 @@ function About() {
                 </div>
 
 
-                <div className='max-w-screen-2xl font-poppins max-auto flex mx-auto w-[79%] justify-between pt-[142px]
+                <div className='max-w-[1185px] font-poppins flex mx-auto justify-between pt-[140px] pl-[24px] pr-[24px]
                  max-lg:flex-col max-lg:items-center
+                 max-md:pt-[20px]
                 '>
 
                     <div className='w-[46%]
@@ -111,7 +113,7 @@ function About() {
                     </div>
                 </div>
 
-                <div className=" pt-[126px] pb-[52px]">
+                <div className="max-w-[1010px] pl-[24px] pr-[24px] pt-[126px] pb-[52px] mx-auto">
                     <div className="max-w-[848px] text-center m-0 m-auto pr-[24px]
                     max-lg:pr-0
                     " >

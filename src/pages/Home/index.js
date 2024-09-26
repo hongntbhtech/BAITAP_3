@@ -29,19 +29,14 @@ function Home() {
 
             <div className="bg-no-repeat" style={{ backgroundImage: `url(${bg_slider})` }}>
                 <LayoutHeader>
-                    <div>
-                        <div className='max-w-screen-2xl font-poppins flex justify-between pt-[144px] pl-[145px] 
-                    max-xxl:p-0 max-xxl:mx-auto
-                     max-xl:w-[80%] max-xl:p-0 max-xl:mx-auto
-                     max-lg:flex-col max-lg:items-center
-                    max-ssm:w-[90%]
-                     2xl:w-[80%] 2xl:mx-auto
-           '>
-                            <div className='pt-[60px] pb-[60px] pl-[43px] w-2/3
-                        max-lg:text-center max-lg:pl-0
+                    <div className=''>
+                        <div className='max-w-[1181px] mx-auto flex justify-between pl-[58px] pr-[24px] pt-[205px]
+                            max-lg:flex-col max-lg:items-center
+                            max-lg:pl-[24px]
                         '>
+                            <div className='max-w-[474px] max-lg:text-center'>
                                 <h1 className="font-semibold text-[#091156] text-[48px] leading-[60px] -tracking-[0.2px]
-                            max-md:text-[45px] max-ssm:text-[40px] max-sssm:text-[33px]
+                            max-md:text-[45px] max-ssm:text-[40px] max-sssm:text-[33px] 
                             ">
                                     Clinic & beauty consultant
                                 </h1>
@@ -62,8 +57,8 @@ function Home() {
                                 </div>
                             </div>
 
-                            <div className=' w-full pt-1 pl-[13px]'>
-                                <img className='max-xl:pt-[50px] max-lg:m-0 max-lg:m-auto' src={slider_img} alt='Logo' />
+                            <div className='-mt-[56px] max-lg:pt-[60px]'>
+                                <img className='' src={slider_img} alt='Logo' />
                             </div>
                         </div>
 
@@ -77,10 +72,7 @@ function Home() {
                 </LayoutHeader>
 
             </div>
-            <div className='max-w-screen-2xl font-poppins
-            max-md:w-[90%] max-md:mx-auto
-            2xl:w-[80%] 2xl:mx-auto
-            '>
+            <div className='max-w-[1488px] font-poppins mx-auto pl-[24px] pr-[24px]'>
                 <div className='text-center pt-[131px] max-w-[850px] m-0 m-auto'>
                     <h4 className='text-[16px] font-semibold leading-[20px] text-[#ff64ae] max-md:text-[14px] '>Main Services</h4>
                     <h1 className='text-[36px] font-semibold leading-[45px] text-[#091156] max-w-[450px] m-0 m-auto pt-[12px]
@@ -91,9 +83,9 @@ function Home() {
                     '>Porta rhoncus orci condimentum vitae lobortis eu dignissim non massa. Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
                 </div>
 
-                <div className='flex justify-between max-w-[1140px] m-0 m-auto pt-[86px] 
-                max-xl:flex-col max-xl:items-center
-                 '>
+                <div className='flex flex-wrap justify-between max-w-[1140px] m-0 m-auto pt-[86px]
+                max-xl:justify-center
+                '>
                     <ServiveBoxMain className='hover:shadow-custom-hover'>
                         <ImgBox src={animation1} alt='Beauty consultation' />
                         <Heading>Beauty consultation</Heading>
@@ -116,13 +108,11 @@ function Home() {
 
             <div className="bg-no-repeat bg-right"
                 style={{ backgroundImage: `url(${bg_about})` }}>
-                <div className='max-w-screen-2xl font-poppins flex pt-[135px] pl-[150px] pr-[145px]
-            max-xxl:w-[80%] max-xxl:p-0 max-xxl:mx-auto
-            max-xl:w-[80%] max-xl:flex-col max-xl:items-center
-             2xl:w-[80%] 2xl:mx-auto
-            '
+                <div className='max-w-[1188px] mx-auto font-poppins flex justify-between pl-[24px] pr-[24px] pt-[135px]
+                  max-xl:flex-col max-xl:items-center
+                '
                 >
-                    <div className='w-[80%] max-xl:text-center'>
+                    <div className='max-xl:text-center'>
                         <h4 className='text-[16px] font-semibold leading-[20px] text-[#ff64ae]
                     max-md:text-[14px] max-sm:text-[14px]
                     '>About Us</h4>
@@ -151,12 +141,8 @@ function Home() {
                         </div>
                     </div>
 
-                    <div className='w-full max-md:w-none'>
-                        <img className='min-w-[624px] -mt-[30px] ml-[59px] object-cover
-                    max-xxl:m-0 max-xl:m-0
-                    max-xl:m-0 max-xl:m-auto
-                    max-md:min-w-0
-                    ' src={imgAbout} alt='abc'></img>
+                    <div className=''>
+                        <img className='w-full' src={imgAbout} alt='abc'></img>
                     </div>
                 </div>
             </div>
@@ -166,18 +152,15 @@ function Home() {
 
             <div className="bg-no-repeat"
                 style={{ backgroundImage: `url(${bg_contact})` }}>
-                <div className="max-w-screen-2xl font-poppins flex justify-between pt-[144px] pl-[150px] pr-[150px]
-            max-xl:flex-col max-xl:w-[80%] max-xl:p-0 max-xl:mx-auto max-xl:items-center
-            2xl:w-[80%] 2xl:mx-auto
-            "
-
-                >
+                <div className="max-w-[1188px] font-poppins flex justify-between pl-[24px] pr-[24px] mx-auto pt-[145px]
+                  max-lg:flex-col max-lg:items-center
+                ">
                     <div className='pt-[158px] max-xl:pt-[20px]'>
                         <img src={contact_img} alt='abc'></img>
                     </div>
 
 
-                    <div className='w-[45.5%] max-xl:text-center max-xl:w-full'>
+                    <div className='max-w-[520px]'>
                         <h5 className='text-[16px] font-semibold leading-[20px] text-[#ff64ae]'>Contact Us</h5>
                         <h1 className='text-[36px] font-semibold leading-[45px] text-[#091156] -tracking-[0.3px] w-[71%] pt-[12px] max-xl:w-full'>Send your inquiry to our expert team</h1>
                         <p className='text-[16px] font-normal leading-[24px] tracking-[1.6px] text-[#8b8b8b] pt-[19px]'>Lorem ipsum dolor sit amet nulla turapis tellus.</p>

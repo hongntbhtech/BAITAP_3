@@ -36,17 +36,15 @@ function Blog() {
                 </div>
 
                 <div className="h-[285px] bg-no-repeat 2xl:bg-cover" style={{ backgroundImage: `url(${bg_blog})` }}>
-                    <div className="max-w-[1142px] mx-auto flex justify-between pt-[122px]
-                    max-xl:pl-[30px] max-xl:pr-[30px]
+                    <div className="max-w-[1190px] mx-auto flex justify-between pt-[122px] pl-[24px] pr-[24px]
                     ">
                         <h1 className="font-semibold text-[36px] leading-[45px] text-[#ffffff]">Blog</h1>
                         <h5 className="font-medium text-[16px] leading-[24px] tracking-[1.6px] text-[#D9D9D9] pt-[10px]">Home • Blog</h5>
                     </div>
                 </div>
 
-                <div className="flex max-w-[1140px] mx-auto justify-between
-                 max-xl:flex-col max-xl:items-center max-xl:max-w-none
-                       max-xl:pl-[30px] max-xl:pr-[30px]
+                <div className="flex flex-wrap max-w-[1188px] mx-auto justify-between pl-[24px] pr-[24px]
+                 max-xl:justify-center
                 ">
                     <div className=" pt-[108px]">
                         <div className="max-w-[730px] min-h-[953px] bg-[#F2F4FF] rounded-[50px]">
@@ -154,8 +152,9 @@ function Blog() {
                         
                     </div>
 
-                    <div className="pt-[108px] max-xl:flex max-xl:justify-between flex-wrap max-xl:mx-auto
-                    max-md:mx-auto max-md:justify-center
+                    <div className="pt-[108px] max-xl:flex max-xl:justify-between max-xl:flex-wrap 
+                    max-xl:justify-center
+                    max-xl:gap-[30px]
                     ">
                         <div className="relative ">
                             <input className="w-[350px] h-[65px] rounded-[25px] border-[1px] border-[#D9DDFE] pl-[26px] pb-[2px]
@@ -167,6 +166,11 @@ function Blog() {
                                 </img>
                             </div>
                         </div>
+
+                        <div className="pt-[108px] max-xl:flex max-xl:justify-between max-xl:flex-wrap 
+                    max-xl:justify-center
+                    max-xl:gap-[30px]
+                    ">
 
                         <div className="max-w-[350px] min-h-[471px] bg-[#F2F4FF] rounded-[25px] mt-[76px]">
                             <div className="max-w-[290px] mx-auto pt-[59px] pl-[18px]">
@@ -259,6 +263,7 @@ function Blog() {
                                 </div>
                             </div>
 
+
                         </div>
 
                        
@@ -277,7 +282,7 @@ function Blog() {
                                 <img src={contact2} alt="abc"></img>
                             </div>
                         </div>
-
+                        </div>
                         </div>
 
 

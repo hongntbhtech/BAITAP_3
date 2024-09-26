@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import footer_logo from '../../assests/Footer/Footer.png';
 
 import footer_bg from '../../assests/Footer/Footer_BG.png';
@@ -17,18 +17,44 @@ import { Link } from 'react-router-dom';
 
 
 function Footer() {
+    // const scrollToTop = () => {
+    //     window.scrollTo({
+    //         top: 0,
+    //         behavior: 'smooth', // Smooth scroll
+    //     });
+    // };
+
+    const [showButton, setShowButton] = useState(false);
+
+    const handleScroll = () => {
+        if (window.scrollY > 100) { // Điều chỉnh giá trị nếu cần
+            setShowButton(true);
+        } else {
+            setShowButton(false);
+        }
+    };
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth', // Smooth scroll
         });
     };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <>
             <footer className='font-poppins relative'>
                 <div className='pt-[69px]'>
                     <div className="relative  h-[705.34px] bg-no-repeat 2xl:bg-cover "
-                      style={{ backgroundImage: `url(${footer_bg})` }}>
+                        style={{ backgroundImage: `url(${footer_bg})` }}>
                         <div className='max-w-screen-2xl flex justify-between pt-[242px] w-[79.2%] mx-auto 
                         max-xl:w-[85%] 
                         max-lg:flex-wrap max-lg:pt-[100px] max-lg:w-[70%]
@@ -50,15 +76,25 @@ function Footer() {
                                 </div>
                             </div>
 
-        
+
                             <div className='w-[13.4%] -mt-[14px] max-lg:pt-[50px] max-lg:w-[30%] max-lg:mx-auto max-md:w-[40%] max-md:mx-auto' >
                                 <h3 className='text-[18px] font-semibold leading-[27px] tracking-[1.8px] text-white max-md:text-[14px]'>Pages</h3>
                                 <ul className='pt-[20px]'>
-                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>Home</List>
-                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>About</List>
-                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>Services</List>
-                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>Gallery</List>
-                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>Team</List>
+                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>
+                                        <Link to='/'>Home</Link>
+                                    </List>
+                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>
+                                        <Link to='/about'>About</Link>
+                                    </List>
+                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>
+                                        <Link to='/service'>Services</Link>
+                                    </List>
+                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>
+                                        <Link to='/gallery'>Gallery</Link>
+                                    </List>
+                                    <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>
+                                        <Link to='/team'>Team</Link>
+                                    </List>
                                 </ul>
                             </div>
 
@@ -67,21 +103,37 @@ function Footer() {
                                 <ul className='pt-[22px]' >
                                     <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none  max-md:text-[12px]'>Terms & conditions</List1>
                                     <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>Privacy policy</List1>
-                                    <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>Blog</List1>
-                                    <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>Contact</List1>
+                                    <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>
+                                        <Link to='/blog'>Blog</Link>
+                                    </List1>
+                                    <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>
+                                        <Link to='/contact'>Contact</Link>
+                                    </List1>
                                 </ul>
                             </div>
-    
+
 
                         </div>
 
-                        <div className='w-[95.5%] flex justify-end fixed bottom-[170px]'>
+                        {/* <div className='w-[95.5%] flex justify-end fixed bottom-[170px]'>
                             <Link onClick={scrollToTop} >
                                 <div className='w-[36px] h-[36px] bg-[#ff64ae] rounded-[5px] flex justify-center items-center'>
                                     <img src={vector} alt='abc'></img>
                                 </div>
                             </Link>
-                        </div>
+                        </div> */}
+
+                        {showButton && (
+                            <div className='w-[95.5%] flex justify-end fixed bottom-[170px]'>
+                                <Link onClick={scrollToTop}>
+                                    <div className='w-[36px] h-[36px] bg-[#ff64ae] rounded-[5px] flex justify-center items-center'>
+                                        <img src={vector} alt='Scroll to top' />
+                                    </div>
+                                </Link>
+                            </div>
+                        )}
+
+
 
                         <div className='max-w-screen-2xl flex justify-between w-[79.2%] mx-auto pt-[138px]
                          max-xl:w-[85%] max-lg:pt-[80px]
@@ -105,7 +157,7 @@ function Footer() {
 
                     </div>
                     <div className="absolute bg-no-repeat w-full h-[125px] bottom-0 left-0 -z-10"
-                    style={{ backgroundImage: `url(${bg_bottom})` }}>
+                        style={{ backgroundImage: `url(${bg_bottom})` }}>
 
                     </div>
                 </div>

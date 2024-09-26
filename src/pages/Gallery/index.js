@@ -26,17 +26,16 @@ function Gallery() {
                 <LayoutHeader></LayoutHeader>
                 </div>
 
-                <div className="max-w-[1140px] mx-auto pt-[118px] pb-[124px]">
+                <div className="max-w-[1188px] mx-auto pt-[118px] pb-[124px] pl-[24px] pr-[24px]">
                     <div className="flex justify-between max-w-[1120px]
                        max-lg:flex-col max-lg:items-center max-lg:max-w-none
-                      max-lg:pl-[15px] max-lg:pr-[15px]
-                    ">
-                        <div className="max-w-[615px]">
+                   ">
+                        <div className="max-w-[615px] max-lg:text-center">
                             <h4 className="font-semibold text-[16px] leading-[20px] text-[#FF64AE]">Our Gallery</h4>
                             <h1 className="font-semibold text-[36px] leading-[45px] text-[#091156] pt-[11px] -tracking-[0.2px]">Check out the collection pictures from our clinic</h1>
                         </div>
                         <div className="max-w-[407px]
-                        max-lg:max-w-none
+                        max-lg:max-w-none max-lg:text-center
                         ">
                             <p className="text-[16px] font-normal leading-[24px] tracking-[1.6px] text-[#8B8B8B] pt-[30px] ">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis
@@ -44,27 +43,30 @@ function Gallery() {
                         </div>
                     </div>
 
-                    <div className="flex justify-between pt-[90px]
-                       max-lg:flex-col max-lg:items-center
-                       max-lg:pl-[15px] max-lg:pr-[15px]
+                    <div className="flex flex-wrap justify-between pt-[90px]
+                       max-xl:justify-center
+                       max-xl:gap-[30px]
+                   
                     ">
                         <img src={img_gallery1} alt="abc"></img>
                         <img src={img_gallery2} alt="abc"></img>
                         <img src={img_gallery3} alt="abc"></img>
                     </div>
 
-                    <div className="flex justify-between pt-[37px]
-                       max-lg:flex-col max-lg:items-center
-                       max-lg:pl-[15px] max-lg:pr-[15px]
+                    <div className="flex flex-wrap justify-between pt-[90px]
+                       max-xl:justify-center
+                       max-xl:gap-[30px]
+                   
                     ">
                         <img src={img_gallery4} alt="abc"></img>
                         <img src={img_gallery5} alt="abc"></img>
                         <img src={img_gallery6} alt="abc"></img>
                     </div>
 
-                    <div className="flex justify-between pt-[37px]
-                       max-lg:flex-col max-lg:items-center
-                      max-lg:pl-[15px] max-lg:pr-[15px]
+                    <div className="flex flex-wrap justify-between pt-[90px]
+                       max-xl:justify-center
+                       max-xl:gap-[30px]
+                   
                     ">
                         <img src={img_gallery7} alt="abc"></img>
                         <img src={img_gallery8} alt="abc"></img>
@@ -91,9 +93,8 @@ function Gallery() {
                     </div>
                 </div>
 
-                <div className="max-w-[1140px] flex justify-between mx-auto pt-[122px] pb-[30px]
+                <div className="max-w-[1188px] flex justify-between mx-auto pt-[122px] pb-[30px] pl-[24px] pr-[24px]
                  max-lg:flex-col max-lg:items-center max-lg:max-w-none
-                       max-lg:pl-[15px] max-lg:pr-[15px]
                 ">
                     <div className="max-w-[642px]
                      max-lg:flex-col max-lg:items-center max-lg:max-w-none max-lg:text-center
