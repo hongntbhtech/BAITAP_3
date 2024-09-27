@@ -194,7 +194,7 @@ function Team() {
                             </button>
                         </div>
 
-                        <p className="text-[14px] font-normal leading-[21px] tracking-[1.4px] text-[#8b8b8b] max-w-[555px] text-center">
+                        <p className="min-h-[105px] text-[14px] font-normal leading-[21px] tracking-[1.4px] text-[#8b8b8b] max-w-[555px] text-center">
                             {currentContent.content}
                         </p>
 

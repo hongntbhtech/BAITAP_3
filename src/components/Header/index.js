@@ -40,7 +40,7 @@ function Header() {
 
                         <li className='relative group max-lg:border-b max-lg:border-gray-300 max-lg:pb-2'>
                             <Link to='' className='no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B] whitespace-nowrap
-                            
+                            cursor-pointer
                             max-lg:text-[14px]
 
                             max-lg:text-[#091156]

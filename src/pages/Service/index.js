@@ -16,13 +16,33 @@ import play_button from "../../assests/Slider/play_button.png"
 
 import LayoutHeader from '../../layout/LayoutHeader'
 import LayoutFooter from '../../layout/LayoutFooter'
-function Service(){
-    return(
+import React, { useState } from 'react';
+
+// import { useSelector, useDispatch } from 'react-redux';
+// import { visibleContent, hiddenContent } from '../Service/actions/service';
+function Service() {
+    // const [isActive, setIsActive] = useState(false); // Khởi tạo state
+
+    // const showHandler = () => {
+    //     setIsActive(true); // Hiển thị nội dung
+    // };
+
+    // const hideHandler = () => {
+    //     setIsActive(false); // Ẩn nội dung
+    // };
+
+    const [activeIndex, setActiveIndex] = useState(null); // Sử dụng index để theo dõi câu hỏi nào đang mở
+
+    const toggleHandler = (index) => {
+        setActiveIndex(activeIndex === index ? null : index); // Mở/đóng câu hỏi
+    };
+
+    return (
         <>
-                <div className="max-xl:pl-[15px] max-xl:pr-[15px]">
+            <div className="max-xl:pl-[15px] max-xl:pr-[15px]">
                 <div className="max-w-screen-2xl font-poppins mx-auto">
-                {/* <Header/> */}
-                <LayoutHeader></LayoutHeader>
+                    {/* <Header/> */}
+                    <LayoutHeader></LayoutHeader>
                 </div>
                 <div className="max-w-[1148px] mx-auto pt-[118px] pl-[24px] pr-[24px]
                 ">
@@ -38,7 +58,7 @@ function Service(){
                      
                     ">
                         <img className="object-cover" src={img_service1} alt="abc"></img>
-                        <img className="object-cover max-lg:pt-[20px]" src={img_service2} alt="abc"></img> 
+                        <img className="object-cover max-lg:pt-[20px]" src={img_service2} alt="abc"></img>
                     </div>
 
                     <div className="flex flex-wrap justify-between pt-[74px] m-0 m-auto max-w-[1100px]
@@ -47,7 +67,7 @@ function Service(){
                      
                     ">
                         <img src={img_service3} alt="abc"></img>
-                        <img className="max-lg:pt-[20px]" src={img_service4} alt="abc"></img> 
+                        <img className="max-lg:pt-[20px]" src={img_service4} alt="abc"></img>
                     </div>
                 </div>
 
@@ -65,10 +85,10 @@ function Service(){
                         <h1 className='text-[36px] font-semibold leading-[45px] text-[#091156] pt-[13px] -tracking-[0.3px] '>We services beauty consultation</h1>
                         <p className='text-[16px] font-normal leading-[24px] tracking-[1.6px] text-[#8b8b8b] max-w-[480px] pt-[12px] max-lg:max-w-none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet. Egestas volutpat facilisi eu libero.</p>
                         <div className="flex">
-                        <p className="text-[16px] font-semibold leading-[24px] tracking-[1.5px] text-[#091156] max-w-[480px] pt-[25px] max-lg:max-w-none"> Make an Appointment</p>
-                        <span className="text-[30px] text-[#FF64AE] pl-[10px] pt-[13px] font-semibold -tracking-[4px]">{'>>'}</span>
+                            <p className="text-[16px] font-semibold leading-[24px] tracking-[1.5px] text-[#091156] max-w-[480px] pt-[25px] max-lg:max-w-none"> Make an Appointment</p>
+                            <span className="text-[30px] text-[#FF64AE] pl-[10px] pt-[13px] font-semibold -tracking-[4px]">{'>>'}</span>
                         </div>
-                        
+
                     </div>
                 </div>
 
@@ -82,10 +102,10 @@ function Service(){
                         <h1 className='text-[36px] font-semibold leading-[45px] text-[#091156] pt-[13px] -tracking-[0.3px] max-w-[411px] '>Skin care and treatment by expert</h1>
                         <p className='text-[16px] font-normal leading-[24px] tracking-[1.6px] text-[#8b8b8b] max-w-[480px] pt-[12px] max-lg:max-w-none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet. Egestas volutpat facilisi eu libero.</p>
                         <div className="flex">
-                        <p className="text-[16px] font-semibold leading-[24px] tracking-[1.5px] text-[#091156] max-w-[480px] pt-[25px] max-lg:max-w-none"> Make an Appointment</p>
-                        <span className="text-[30px] text-[#FF64AE] pl-[10px] pt-[13px] font-semibold -tracking-[4px]">{'>>'}</span>
+                            <p className="text-[16px] font-semibold leading-[24px] tracking-[1.5px] text-[#091156] max-w-[480px] pt-[25px] max-lg:max-w-none"> Make an Appointment</p>
+                            <span className="text-[30px] text-[#FF64AE] pl-[10px] pt-[13px] font-semibold -tracking-[4px]">{'>>'}</span>
                         </div>
-                        
+
                     </div>
 
                     <div className="">
@@ -107,10 +127,10 @@ function Service(){
                         <h1 className='text-[36px] font-semibold leading-[45px] text-[#091156] pt-[13px] -tracking-[0.3px] '>We present quality beauty products</h1>
                         <p className='text-[16px] font-normal leading-[24px] tracking-[1.6px] text-[#8b8b8b] max-w-[480px] pt-[12px] max-lg:max-w-none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet. Egestas volutpat facilisi eu libero.</p>
                         <div className="flex">
-                        <p className="text-[16px] font-semibold leading-[24px] tracking-[1.5px] text-[#091156] max-w-[480px] pt-[25px] max-lg:max-w-none"> Make an Appointment</p>
-                        <span className="text-[30px] text-[#FF64AE] pl-[10px] pt-[13px] font-semibold -tracking-[4px]">{'>>'}</span>
+                            <p className="text-[16px] font-semibold leading-[24px] tracking-[1.5px] text-[#091156] max-w-[480px] pt-[25px] max-lg:max-w-none"> Make an Appointment</p>
+                            <span className="text-[30px] text-[#FF64AE] pl-[10px] pt-[13px] font-semibold -tracking-[4px]">{'>>'}</span>
                         </div>
-                        
+
                     </div>
                 </div>
 
@@ -136,54 +156,116 @@ function Service(){
                     </div>
                 </div>
 
-                <div className="max-w-[1020px] mx-auto pt-[117px] pb-[31px] pl-[24px] pr-[24px]
+                <div className="min-h-[815px] max-w-[1020px] mx-auto pt-[117px] pb-[31px] pl-[24px] pr-[24px]
             
                 ">
                     <div className="text-center items-center">
                         <div className="pb-[15px]">
-                        <h1 className="font-semibold text-[36px] leading-[45px] text-[#091156] max-w-[640px] mx-auto pl-[13px] -tracking-[0.3px]">Services FAQ’s</h1>
+                            <h1 className="font-semibold text-[36px] leading-[45px] text-[#091156] max-w-[640px] mx-auto pl-[13px] -tracking-[0.3px]">Services FAQ’s</h1>
                         </div>
                         <div className="w-[40px] h-[5px] bg-[#FF64AE] rounded-[5px] m-0 m-auto "></div>
                     </div>
 
+
                     <div className="pt-[68px] flex justify-between max-w-[972px] pb-[12px]">
-                        <div className="font-semibold text-[16px] leading-[24px] tracking-[1.5px] text-[#091156] pl-[34px] ">Is beauty consultation handled thoroughly? </div>
-                        <span className="text-[18px] text-[#091156] pl-[10px] pt-[0px] font-semibold pr-[25px]">{'^'}</span>
-
-                    </div>
-
-                    <div className="w-[100%] h-[1px] bg-[#091156]">
-
-                    </div>
-
-                     <div className="max-w-[821px] mx-auto pt-[52px]
-                     ">
-                            <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna</p>
-                            <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B] pt-[21px]">porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla</p>
+                        <div className="font-semibold text-[16px] leading-[24px] tracking-[1.5px] text-[#091156] pl-[34px]">
+                            Is beauty consultation handled thoroughly?
                         </div>
+                        <span onClick={() => toggleHandler(0)} className="text-[18px] text-[#091156] pl-[10px] pt-[0px] font-semibold pr-[25px]">
+                            {activeIndex === 0 ? 'v' : '^'}
+                        </span>
+                    </div>
+                    {activeIndex === 0 && (
+                        <>
+                            <div className="w-[100%] h-[1px] bg-[#091156] my-2"></div>
+                            <div className="max-w-[821px] mx-auto pt-[52px]">
+                                <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B]">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna
+                                </p>
+                                <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B] pt-[21px]">
+                                    porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla
+                                </p>
+                            </div>
+                        </>
+                    )}
 
-                   <div className="pt-[87px] flex justify-between max-w-[972px] pb-[12px]">
-                   <div className="font-semibold text-[16px] leading-[24px] tracking-[1.6px] text-[#091156] pl-[34px]">Can I be beautiful in an instant time? </div>
-                    <span className="text-[18px] text-[#091156] pl-[10px] pt-[0px] font-semibold pr-[25px]">{'v'}</span>
-                   </div>
+                    <div className="pt-[68px] flex justify-between max-w-[972px] pb-[12px]">
+                        <div className="font-semibold text-[16px] leading-[24px] tracking-[1.5px] text-[#091156] pl-[34px]">
+                            Can I be beautiful in an instant time?
+                        </div>
+                        <span onClick={() => toggleHandler(1)} className="text-[18px] text-[#091156] pl-[10px] pt-[0px] font-semibold pr-[25px]">
+                            {activeIndex === 1 ? 'v' : '^'}
+                        </span>
+                    </div>
+                    {activeIndex === 1 && (
+                        <>
+                            <div className="w-[100%] h-[1px] bg-[#091156] my-2"></div>
+                            <div className="max-w-[821px] mx-auto pt-[52px]">
+                                <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B]">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna
+                                </p>
+                                <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B] pt-[21px]">
+                                    porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla
+                                </p>
+                            </div>
+                        </>
+                    )}
 
-                   <div className="pt-[16px] flex justify-between max-w-[972px] pb-[12px]">
-                   <div className="font-semibold text-[16px] leading-[24px] tracking-[1.55px] text-[#091156] pl-[34px]">Are there any side effects to the treatment methods or treatments at this clinic? </div>
-                    <span className="text-[18px] text-[#091156] pl-[10px] pt-[0px] font-semibold pr-[25px]">{'v'}</span>
-                   </div>
+                    <div className="pt-[68px] flex justify-between max-w-[972px] pb-[12px]">
+                        <div className="font-semibold text-[16px] leading-[24px] tracking-[1.5px] text-[#091156] pl-[34px]">
+                            Are there any side effects to the treatment methods or treatments at this clinic?
+                        </div>
+                        <span onClick={() => toggleHandler(2)} className="text-[18px] text-[#091156] pl-[10px] pt-[0px] font-semibold pr-[25px]">
+                            {activeIndex === 2 ? 'v' : '^'}
+                        </span>
+                    </div>
+                    {activeIndex === 2 && (
+                        <>
+                            <div className="w-[100%] h-[1px] bg-[#091156] my-2"></div>
+                            <div className="max-w-[821px] mx-auto pt-[52px]">
+                                <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B]">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna
+                                </p>
+                                <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B] pt-[21px]">
+                                    porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla
+                                </p>
+                            </div>
+                        </>
+                    )}
 
-                   <div className="pt-[16px] flex justify-between max-w-[972px] pb-[12px]">
-                   <div className="font-semibold text-[16px] leading-[24px] tracking-[1.55px] text-[#091156] pl-[34px]">Do professionals have accreditation in their respective fields? </div>
-                    <span className="text-[18px] text-[#091156] pl-[10px] pt-[0px] font-semibold pr-[25px]">{'v'}</span>
-                   </div>
+                    <div className="pt-[68px] flex justify-between max-w-[972px] pb-[12px]">
+                        <div className="font-semibold text-[16px] leading-[24px] tracking-[1.5px] text-[#091156] pl-[34px]">
+                            Do professionals have accreditation in their respective fields?
+                        </div>
+                        <span onClick={() => toggleHandler(3)} className="text-[18px] text-[#091156] pl-[10px] pt-[0px] font-semibold pr-[25px]">
+                            {activeIndex === 3 ? 'v' : '^'}
+                        </span>
+                    </div>
+                    {activeIndex === 3 && (
+                        <>
+                            <div className="w-[100%] h-[1px] bg-[#091156] my-2"></div>
+                            <div className="max-w-[821px] mx-auto pt-[52px]">
+                                <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B]">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna
+                                </p>
+                                <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B] pt-[21px]">
+                                    porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla
+                                </p>
+                            </div>
+                        </>
+                    )}
+
+
+
+
+
 
                 </div>
 
-              
-                </div>
+            </div>
 
-                {/* <Footer/> */}
-                <LayoutFooter></LayoutFooter>
+            {/* <Footer/> */}
+            <LayoutFooter></LayoutFooter>
         </>
     )
 }

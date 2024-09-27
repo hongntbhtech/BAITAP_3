@@ -89,7 +89,7 @@ function Home2() {
                                '>
                                    <ul>
                                        <li>
-                                           <Link to='/' className='block px-4 py-2 text-base text-[#fff] hover:bg-[#FF64AE] hover:text-white rounded-md
+                                           <Link to='/' className='block px-4 py-2 text-base text-[#8b8b8b] hover:bg-[#FF64AE] hover:text-white rounded-md
                                            max-lg:text-[14px]
                                            max-lg:text-[#091156]
                                            '>
@@ -97,7 +97,7 @@ function Home2() {
                                            </Link>
                                        </li>
                                        <li>
-                                           <Link to='/home' className='block px-4 py-2 text-base text-[#fff] hover:bg-[#FF64AE] hover:text-white rounded-md
+                                           <Link to='/home' className='block px-4 py-2 text-base text-[#8b8b8b] hover:bg-[#FF64AE] hover:text-white rounded-md
                                            max-lg:text-[14px]
                                            max-lg:text-[#091156]
                                            '>
@@ -106,7 +106,7 @@ function Home2() {
                                        </li>
    
                                        <li>
-                                           <Link to='/team' className='block px-4 py-2 text-base text-[#fff] hover:bg-[#FF64AE] hover:text-white rounded-md
+                                           <Link to='/team' className='block px-4 py-2 text-base text-[#8b8b8b] hover:bg-[#FF64AE] hover:text-white rounded-md
                                            max-lg:text-[14px]
                                            max-lg:text-[#091156]
                                            '>

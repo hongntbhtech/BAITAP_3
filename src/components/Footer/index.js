@@ -27,7 +27,7 @@ function Footer() {
     const [showButton, setShowButton] = useState(false);
 
     const handleScroll = () => {
-        if (window.scrollY > 100) { // Điều chỉnh giá trị nếu cần
+        if (window.scrollY > 200) { // Điều chỉnh giá trị nếu cần
             setShowButton(true);
         } else {
             setShowButton(false);
