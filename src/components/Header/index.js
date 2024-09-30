@@ -33,7 +33,7 @@ function Header() {
 
     return (
         <>
-            <header className='max-w-screen-2xl font-poppins mx-auto sticky top-0'>
+            <header className='max-w-screen-2xl font-poppins mx-auto'>
                 <div className='max-w-[1188px] mx-auto flex pl-[20px] pr-[24px] justify-between pt-[41px]'>
                     <div>
                         <img className='max-lg:w-[100%]' src={logo} alt="abc" />
