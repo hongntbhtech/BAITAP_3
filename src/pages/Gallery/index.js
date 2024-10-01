@@ -85,11 +85,11 @@ function Gallery() {
                 </div>
 
                 <div className="h-[628px] bg-no-repeat 2xl:bg-cover" style={{ backgroundImage: `url(${bg_gallery})` }}>
-                    <div className="max-w-[555px] text-center mx-auto pt-[172px]
+                    <div className="max-w-[1188px] pl-[24px] pr-[24px] text-center mx-auto pt-[172px]
                   max-lg:pl-[15px] max-lg:pr-[15px]
                     ">
                         <h1 className="font-semibold text-[36px] leading-[45px] text-[#ffffff]">Watch the video tour</h1>
-                        <p className="font-normal text-[16px] leading-[24px] tracking-[1.6px] text-[#CACACA] pt-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+                        <p className="font-normal text-[16px] leading-[24px] tracking-[1.6px] text-[#CACACA] pt-[18px] max-w-[555px] mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                     </div>
                     <div className="flex justify-center items-center pt-[31px]">
                         <img src={play_button} alt="abc"></img>
