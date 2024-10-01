@@ -23,7 +23,7 @@ function Gallery() {
         <>
 
         <LayoutLanding1>
-            <div className="max-xl:pl-[15px] max-xl:pr-[15px]">
+            <div className="">
             <div className="max-w-screen-2xl font-poppins mx-auto">
                 {/* <Header /> */}
                 {/* <LayoutHeader></LayoutHeader> */}
@@ -56,7 +56,7 @@ function Gallery() {
                         <img src={img_gallery3} alt="abc"></img>
                     </div>
 
-                    <div className="flex flex-wrap justify-between pt-[90px]
+                    <div className="flex flex-wrap justify-between pt-[38px]
                        max-xl:justify-center
                        max-xl:gap-[30px]
                    
@@ -66,7 +66,7 @@ function Gallery() {
                         <img src={img_gallery6} alt="abc"></img>
                     </div>
 
-                    <div className="flex flex-wrap justify-between pt-[90px]
+                    <div className="flex flex-wrap justify-between pt-[38px]
                        max-xl:justify-center
                        max-xl:gap-[30px]
                    
@@ -76,7 +76,7 @@ function Gallery() {
                         <img src={img_gallery9} alt="abc"></img>
                     </div>
 
-                    <div className="max-w-[660px] pt-[68px]
+                    <div className="max-w-[660px] pt-[65px]
                      max-lg:flex-col max-lg:items-center max-lg:max-w-none
                        max-lg:pl-[15px] max-lg:pr-[15px]
                     ">
@@ -85,7 +85,7 @@ function Gallery() {
                 </div>
 
                 <div className="h-[628px] bg-no-repeat 2xl:bg-cover" style={{ backgroundImage: `url(${bg_gallery})` }}>
-                    <div className="max-w-[1188px] pl-[24px] pr-[24px] text-center mx-auto pt-[172px]
+                    <div className="max-w-[1188px] pl-[24px] pr-[24px] text-center mx-auto pt-[174px]
                   max-lg:pl-[15px] max-lg:pr-[15px]
                     ">
                         <h1 className="font-semibold text-[36px] leading-[45px] text-[#ffffff]">Watch the video tour</h1>
