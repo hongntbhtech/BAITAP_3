@@ -21,8 +21,7 @@ import LayoutLanding1 from "../../components/LayoutLanding1/LayoutLanding1"
 function Gallery() {
     return (
         <>
-
-        <LayoutLanding1>
+         <LayoutLanding1>
             <div className="">
             <div className="max-w-screen-2xl font-poppins mx-auto">
                 {/* <Header /> */}
@@ -121,9 +120,13 @@ function Gallery() {
 
                 
             </div>
-            {/* <Footer/> */}
-            {/* <LayoutFooter></LayoutFooter> */}
+
             </LayoutLanding1>
+            {/* <Footer/> */}
+           {/* <div className="-mt-[50px]">
+           <LayoutFooter></LayoutFooter>
+           </div> */}
+         
         </>
     )
 }

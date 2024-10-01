@@ -18,24 +18,24 @@ import contact1 from '../../assests/Blog/facebook-f.png';
 import contact5 from '../../assests/Blog/twit.png';
 import contact3 from '../../assests/Blog/insta.png';
 import contact2 from '../../assests/Blog/linkedin-in.png';
-import LayoutLanding1 from "../../components/LayoutLanding1/LayoutLanding1"
+// import LayoutLanding1 from "../../components/LayoutLanding1/LayoutLanding1"
 
 // import circle from '../../assests/Blog/Ellipse.png'
 // import Footer from "../../components/Footer";
 
-// import LayoutHeader from '../../layout/LayoutHeader'
-// import LayoutFooter from '../../layout/LayoutFooter'
+import LayoutHeader from '../../layout/LayoutHeader'
+import LayoutFooter from '../../layout/LayoutFooter'
 
 
 function Blog() {
     return (
         <>
 
-        <LayoutLanding1>
+        {/* <LayoutLanding1> */}
             <div className="">
                 <div className="max-w-screen-2xl font-poppins mx-auto pb-[28px]">
                     {/* <Header /> */}
-                    {/* <LayoutHeader></LayoutHeader> */}
+                    <LayoutHeader></LayoutHeader>
                 </div>
 
                 <div className="h-[285px] bg-no-repeat 2xl:bg-cover" style={{ backgroundImage: `url(${bg_blog})` }}>
@@ -298,8 +298,12 @@ function Blog() {
 
                     </div>
                 </div>
+
+                <div className="-mt-[7px]">
+                    <LayoutFooter></LayoutFooter>
+                </div>
            
-                </LayoutLanding1>
+                {/* </LayoutLanding1> */}
 
         </>
     )
