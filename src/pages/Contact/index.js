@@ -11,23 +11,24 @@ import img_contact3 from "../../assests/Contact/mail-bulk.png"
 // import Footer from "../../components/Footer"
 
 import bg_contact1 from "../../assests/Contact/bg_contact1.png"
+import LayoutLanding1 from "../../components/LayoutLanding1/LayoutLanding1";
 
-import LayoutHeader from '../../layout/LayoutHeader'
-import LayoutFooter from '../../layout/LayoutFooter'
+// import LayoutHeader from '../../layout/LayoutHeader'
+// import LayoutFooter from '../../layout/LayoutFooter'
 function Contact(){
     return(
         <>
+
+        <LayoutLanding1>
         <div className="">
         <div className="max-w-screen-2xl font-poppins mx-auto">
             {/* <Header/> */}
-            <LayoutHeader></LayoutHeader>
+            {/* <LayoutHeader></LayoutHeader> */}
 
             </div>
             <div className="bg-no-repeat bg-cover w-full" style={{ backgroundImage: `url(${bg_contact1})` }}>
-            <div className="max-w-[1140.33px] mx-auto pt-[117px]">
-                <div className="max-w-[1144px] mx-auto flex justify-between
-                max-xxl:w-[93%]
-                max-xl:w-[85%]
+            <div className="max-w-[1188px] mx-auto pt-[117px] pl-[24px] pr-[24px]">
+                <div className=" mx-auto flex justify-between 
                 max-lg:flex-col max-lg:text-center max-lg:items-center
             
                 ">
@@ -86,7 +87,7 @@ function Contact(){
                 <img src={map} alt="abc"></img>
             </div>
 
-            <div className="max-w-[1038px] mx-auto pt-[114px] pb-[54px]">
+            <div className="max-w-[1188px] mx-auto pt-[114px] pb-[54px] pl-[24px] pr-[24px]">
                 <div className="text-center max-w-[680px] mx-auto">
                     <h4 className="font-semibold text-[16px] text-[#FF64AE] leading-[20px]">Get in Touch</h4>
                     <h1 className="font-semibold text-[36px] text-[#091156] leading-[45px] pt-[12px] -tracking-[0.1px]">Get direct handling by us</h1>
@@ -124,7 +125,8 @@ function Contact(){
         </div>
 
         {/* <Footer/> */}
-        <LayoutFooter></LayoutFooter>
+        {/* <LayoutFooter></LayoutFooter> */}
+        </LayoutLanding1>
         </>
     )
 }

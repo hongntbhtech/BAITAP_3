@@ -19,6 +19,7 @@ import bg_slider from '../../assests/Slider/bg_slide.png'
 
 import bg_about from '../../assests/About/bg_about.png'
 import bg_contact from '../../assests/Contact/bg_contact.png'
+// import LayoutLanding1 from '../../components/LayoutLanding1/LayoutLanding1';
 
 
 
@@ -26,17 +27,19 @@ import bg_contact from '../../assests/Contact/bg_contact.png'
 function Home() {
     return (
         <>
-
+            {/* <LayoutLanding1> */}
             <div className="bg-no-repeat" style={{ backgroundImage: `url(${bg_slider})` }}>
-                <LayoutHeader>
+                    <LayoutHeader></LayoutHeader>
                     <div className=''>
-                        <div className='max-w-[1188px] flex justify-between pl-[24px] pr-[24px] pt-[205px] mr-[129px] ml-[165px]
-                            max-xxl:m-0 max-xxl:m-auto max-xxl:ml-[10px] max-xxl:gap-[30px]
+                        <div className='max-w-[1188px] mx-auto flex justify-between pl-[24px] pr-[24px] pt-[205px]
+                            max-xxl:m-0 max-xxl:m-auto  max-xxl:gap-[30px]
+                           
                             max-lg:ml-0
                             max-lg:flex-col max-lg:items-center
                             max-lg:pl-[24px]
+                            
                         '>
-                            <div className='max-w-[474px] max-lg:text-center'>
+                            <div className='max-w-[474px] max-lg:text-center ml-[39px]   max-lg:ml-0'>
                                 <h1 className="font-semibold text-[#091156] text-[48px] leading-[60px] -tracking-[0.2px]
                             max-md:text-[45px] max-ssm:text-[40px] max-sssm:text-[33px] 
                             ">
@@ -71,7 +74,7 @@ function Home() {
                         </div>
                     </div>
 
-                </LayoutHeader>
+            
 
             </div>
             <div className='max-w-[1188px] font-poppins mx-auto pl-[24px] pr-[24px]'>
@@ -193,8 +196,10 @@ function Home() {
                         </div>
                     </div>
                 </div>
-
+               
             </div>
+
+            {/* </LayoutLanding1> */}
 
 
             {/* <Footer /> */}

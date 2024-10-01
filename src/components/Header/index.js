@@ -34,7 +34,7 @@ function Header() {
     return (
         <>
             <header className='max-w-screen-2xl font-poppins mx-auto'>
-                <div className='max-w-[1188px] mx-auto flex pl-[24px] pr-[24px] justify-between pt-[41px]'>
+                <div className='max-w-[1188px] mx-auto flex pl-[20px] pr-[24px] justify-between pt-[41px]'>
                     <div>
                         <img className='max-lg:w-[100%]' src={logo} alt="abc" />
                     </div>
@@ -67,16 +67,16 @@ function Header() {
 
 
                             <li className="max-lg:w-[100%] max-lg:text-center max-lg:border-b max-lg:border-gray-300 max-lg:pb-2">
-                                <Link to='/about' className='my-1 mx-2 no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B] -ml-[6px]'>About</Link>
+                                <Link to='/about' className='max-lg:my-1 max-lg:mx-2 no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B] -ml-[6px]'>About</Link>
                             </li>
                             <li className="max-lg:w-[100%] max-lg:text-center max-lg:border-b max-lg:border-gray-300 max-lg:pb-2">
-                                <Link to='/service' className='my-1 mx-2 no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]'>Service</Link>
+                                <Link to='/service' className='max-lg:my-1 max-lg:mx-2 no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]'>Service</Link>
                             </li>
                             <li className="max-lg:w-[100%] max-lg:text-center max-lg:border-b max-lg:border-gray-300 max-lg:pb-2">
-                                <Link to='/gallery' className='my-1 mx-2 no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]'>Gallery</Link>
+                                <Link to='/gallery' className='max-lg:my-1 max-lg:mx-2 no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]'>Gallery</Link>
                             </li>
                             <li className="max-lg:w-[100%] max-lg:text-center max-lg:border-b max-lg:border-gray-300 max-lg:pb-2">
-                                <Link to='/blog' className='my-1 mx-2 no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]'>Blog</Link>
+                                <Link to='/blog' className='max-lg:my-1 max-lg:mx-2 no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#8B8B8B]'>Blog</Link>
                             </li>
                             <li className='pl-[8px] pt-[1px] max-lg:w-[100%] max-lg:text-center max-lg:pb-[50px] max-lg:border-b max-lg:border-gray-300 max-lg:pb-2'>
                                 <Link to='/contact' className='py-3.5 px-10 bg-[#FF64AE] rounded-full text-white text-base tracking-[1.6px] font-semibold'>Contact</Link>

@@ -15,21 +15,32 @@ import bg_team from '../../assests/Team/unsplash_rE6FqsyyqwM.png'
 import img_team4 from '../../assests/Team/unsplash_Z5g_6TLS6Ho.png'
 import img_team5 from '../../assests/Team/Vector.png'
 import img_team6 from '../../assests/Team/arrow-right.png'
+
 import img_team7 from '../../assests/Team/star.png'
 import img_team8 from '../../assests/Team/star.png'
 import img_team9 from '../../assests/Team/star.png'
 import img_team10 from '../../assests/Team/star.png'
 import img_team11 from '../../assests/Team/star.png'
 
-import LayoutHeader from '../../layout/LayoutHeader'
-import LayoutFooter from '../../layout/LayoutFooter'
+// import LayoutHeader from '../../layout/LayoutHeader'
+// import LayoutFooter from '../../layout/LayoutFooter'
 
 import { useSelector, useDispatch } from 'react-redux';
 import { nextContent, backContent } from '../Team/actions/testimonials';
 
 
 import { ProteamsBoxMain, ImgBox, Heading, Heading1, Para, SocialMedia, SocialMedia1 } from './TeamStyled'
+import LayoutLanding1 from '../../components/LayoutLanding1/LayoutLanding1';
 // import Footer from "../../components/Footer";
+
+
+const star_icon = [
+    { id: 1, src: img_team7, alt: "Star 1" },
+    { id: 2, src: img_team8, alt: "Star 2" },
+    { id: 3, src: img_team9, alt: "Star 3" },
+    { id: 4, src: img_team10, alt: "Star 4" },
+    { id: 5, src: img_team11, alt: "Star 5" },
+];
 function Team() {
     // const dispatch = useDispatch();
     // const currentContent = useSelector(state => state.testimonicalsReducer[0]);
@@ -58,16 +69,17 @@ function Team() {
 
     return (
         <>
+        <LayoutLanding1>
             <div className="">
 
                 <div className="max-w-screen-2xl font-poppins mx-auto">
                     {/* <Header/> */}
 
-                    <LayoutHeader></LayoutHeader>
+                    {/* <LayoutHeader></LayoutHeader> */}
 
                 </div>
 
-                <div className='max-w-[10333px] mx-auto pt-[118px] pl-[24px] pr-[24px]
+                <div className='max-w-[1188px] mx-auto pt-[118px] pl-[24px] pr-[24px]
                     '>
                     <div className='text-center max-w-[800px] m-0 m-auto pr-[79px] max-lg:pr-0
                 '>
@@ -124,7 +136,7 @@ function Team() {
                     </div>
                 </div>
 
-                <div className="max-w-[1290.1px] mx-auto  pt-[151px] pb-[125px]
+                <div className="max-w-[1188px] pl-[24px] pr-[24px] mx-auto  pt-[151px] pb-[125px]
              max-lg:pl-[30px] max-lg:pr-[30px]
             ">
                     <div className="text-center">
@@ -133,34 +145,34 @@ function Team() {
                         <p className="font-normal text-[16px] text-[#8B8B8B] leading-[24px] tracking-[1.6px] pt-[25px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</p>
                     </div>
 
-                    <div className="max-w-[1004px] m-0 m-auto flex justify-between pt-[113px] ml-[75px]
+                    <div className="m-0 m-auto flex justify-between pt-[113px]
                 max-lg:flex-col max-lg:items-center max-lg:ml-0
 
                 ">
                         <img src={img_team1} alt="abc"></img>
-                        <div className="max-w-[434px] pt-[64px]">
+                        <div className="max-w-[434px] pt-[63px] mr-[136px] max-xxl:mr-0">
                             <h5 className="font-semibold text-[18px] leading-[22.5px] text-[#091156]">Lina Gustav / <span className="font-normal italic text-[14px] leading-[17.5px] text-[#CACACA]">Pharmacist</span></h5>
                             <p className="font-normal text-[16px] leading-[24px] tracking-[1.6px] pt-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id magnis at placerat pulvinar euismod neque.</p>
                         </div>
                     </div>
 
-                    <div className="max-w-[1004px] m-0 m-auto flex justify-between pt-[79px] ml-[75px]
+                    <div className=" m-0 m-auto flex justify-between pt-[79px]
                  max-lg:flex-col max-lg:items-center max-lg:ml-0
             
                 ">
                         <img src={img_team2} alt="abc"></img>
-                        <div className="max-w-[434px] pt-[64px]
+                        <div className="max-w-[434px] pt-[63px] mr-[136px] max-xxl:mr-0
                     ">
                             <h5 className="font-semibold text-[18px] leading-[22.5px] text-[#091156]">Adam White / <span className="font-normal italic text-[14px] leading-[17.5px] text-[#CACACA]">Finance</span></h5>
                             <p className="font-normal text-[16px] leading-[24px] tracking-[1.6px] pt-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id magnis at placerat pulvinar euismod neque.</p>
                         </div>
                     </div>
 
-                    <div className="max-w-[1004px] m-0 m-auto flex justify-between pt-[79px] ml-[75px]
+                    <div className=" m-0 m-auto flex justify-between pt-[79px]
                  max-lg:flex-col max-lg:items-center max-lg:ml-0
                 ">
                         <img src={img_team3} alt="abc"></img>
-                        <div className="max-w-[434px] pt-[64px]">
+                        <div className="max-w-[434px] pt-[63px] mr-[136px] max-xxl:mr-0">
                             <h5 className="font-semibold text-[18px] leading-[22.5px] text-[#091156]">Jane Doe /  <span className="font-normal italic text-[14px] leading-[17.5px] text-[#CACACA]">Marketer</span></h5>
                             <p className="font-normal text-[16px] leading-[24px] tracking-[1.6px] pt-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id magnis at placerat pulvinar euismod neque.</p>
                         </div>
@@ -168,16 +180,16 @@ function Team() {
                 </div>
 
                 <div className="h-[529px] bg-no-repeat 2xl:bg-cover" style={{ backgroundImage: `url(${bg_team})` }}>
-                    <div className="max-w-[728px] mx-auto text-center pt-[180px] pl-[24px] pr-[24px]
+                    <div className="max-w-[1188px] mx-auto text-center pt-[180px] pl-[24px] pr-[24px]
                 ">
                         <h1 className="font-semibold text-[36px] leading-[45px] text-[#ffffff] max-w-[500px] mx-auto pl-[23px] -tracking-[0.3px
                     max-lg:pl-0
                     ">Customer satisfaction is our main goal</h1>
-                        <p className="font-normal text-[16px] leading-[24px] tracking-[1.6px] text-[#CACACA] pt-[6px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+                        <p className="max-w-[679px] mx-auto font-normal text-[16px] leading-[24px] tracking-[1.6px] text-[#CACACA] pt-[6px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                     </div>
                 </div>
 
-                <div className="max-w-[823px] mx-auto pt-[119px] pb-[15px] pl-[24px] pr-[24px]
+                <div className="max-w-[1188px] mx-auto pt-[119px] pb-[15px] pl-[24px] pr-[24px]
             ">
                     <div className="text-center">
                         <h4 className="text-[16px] font-semibold leading-[20px] text-[#ff64ae]">Our Testimonials</h4>
@@ -207,11 +219,15 @@ function Team() {
                     </div>
 
                     <div className="flex max-w-[169px] mx-auto justify-between pt-[35px]">
-                        <img src={img_team7} alt="abc"></img>
+                        {/* <img src={img_team7} alt="abc"></img>
                         <img src={img_team8} alt="abc"></img>
                         <img src={img_team9} alt="abc"></img>
                         <img src={img_team10} alt="abc"></img>
-                        <img src={img_team11} alt="abc"></img>
+                        <img src={img_team11} alt="abc"></img> */}
+
+                        {star_icon.map((star) => (
+                            <img key={star.id} src={star.src} alt={star.alt} />
+                        ))}
                     </div>
 
                 </div>
@@ -219,8 +235,10 @@ function Team() {
 
             </div>
 
+            </LayoutLanding1>
+
             {/* <Footer/> */}
-            <LayoutFooter></LayoutFooter>
+            {/* <LayoutFooter></LayoutFooter> */}
         </>
     )
 }

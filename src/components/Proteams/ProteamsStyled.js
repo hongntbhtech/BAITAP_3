@@ -27,6 +27,6 @@ export const SocialMedia = styled.div`
 ${tw`flex m-0 m-auto pt-[42px] justify-center`}
 `;
 
-export const SocialMedia1 = styled.img`
-${tw`mx-0.5`}
-`;
+// export const SocialMedia1 = styled.img`
+// ${tw`mx-0.5`}
+// `;

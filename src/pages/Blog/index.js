@@ -18,21 +18,24 @@ import contact1 from '../../assests/Blog/facebook-f.png';
 import contact5 from '../../assests/Blog/twit.png';
 import contact3 from '../../assests/Blog/insta.png';
 import contact2 from '../../assests/Blog/linkedin-in.png';
+import LayoutLanding1 from "../../components/LayoutLanding1/LayoutLanding1"
 
 // import circle from '../../assests/Blog/Ellipse.png'
 // import Footer from "../../components/Footer";
 
-import LayoutHeader from '../../layout/LayoutHeader'
-import LayoutFooter from '../../layout/LayoutFooter'
+// import LayoutHeader from '../../layout/LayoutHeader'
+// import LayoutFooter from '../../layout/LayoutFooter'
 
 
 function Blog() {
     return (
         <>
+
+        <LayoutLanding1>
             <div className="">
                 <div className="max-w-screen-2xl font-poppins mx-auto pb-[28px]">
                     {/* <Header /> */}
-                    <LayoutHeader></LayoutHeader>
+                    {/* <LayoutHeader></LayoutHeader> */}
                 </div>
 
                 <div className="h-[285px] bg-no-repeat 2xl:bg-cover" style={{ backgroundImage: `url(${bg_blog})` }}>
@@ -156,7 +159,7 @@ function Blog() {
                     max-xl:justify-center
                     max-xl:gap-[30px]
                     ">
-                        <div className="relative ">
+                        <div className="relative max-xl:mx-auto">
                             <input className="w-[350px] h-[65px] rounded-[25px] border-[1px] border-[#D9DDFE] pl-[26px] pb-[2px]
                             max-md:w-[250px]
                             " type="number" placeholder='Search here ...'></input>
@@ -167,12 +170,13 @@ function Blog() {
                             </div>
                         </div>
 
-                        <div className="pt-[108px] max-xl:flex max-xl:justify-between max-xl:flex-wrap 
+                        <div className="pt-[0px] max-xl:flex  max-xl:flex-wrap 
                     max-xl:justify-center
                     max-xl:gap-[30px]
                     ">
 
-                        <div className="max-w-[350px] min-h-[471px] bg-[#F2F4FF] rounded-[25px] mt-[76px]">
+                        <div className="max-w-[350px] min-h-[471px] bg-[#F2F4FF] rounded-[25px] mt-[76px]
+                        max-xl:min-w-[300px]">
                             <div className="max-w-[290px] mx-auto pt-[59px] pl-[18px]">
                                 <h3 className="font-semibold text-[16px] leading-[20px] text-[#091156]">Recent Posts</h3>
 
@@ -206,11 +210,11 @@ function Blog() {
                         
                         <div className="max-w-[350px] min-h-[250px] rounded-[25px] bg-[#F2F4FF] mt-[83px] pt-[58px] pl-[50px]
                         max-xl:pl-[10px]
-                        max-xl:min-w-[250px]
+                        max-xl:min-w-[300px]
                         ">
-                            <h5 className="font-semibold text-[16px] leading-[20px] text-[#091156]">Categories</h5>
+                            <h5 className="font-semibold text-[16px] leading-[20px] text-[#091156] max-xl:text-center">Categories</h5>
 
-                            <div className="pt-[22px]">
+                            <div className="pt-[22px]   max-xl:text-center">
                                 <p className="font-normal text-[14px] leading-[21px] tracking-[1.4px] text-[#8B8B8B]">Consultation</p>
                                 <p className="font-normal text-[14px] leading-[21px] tracking-[1.4px] text-[#8B8B8B] pt-[5px]">Beauty</p>
                                 <p className="font-normal text-[14px] leading-[21px] tracking-[1.4px] text-[#8B8B8B] pt-[5px]">Treatments</p>
@@ -218,7 +222,9 @@ function Blog() {
                             </div>
                         </div>
 
-                        <div className="max-w-[350px] min-h-[274px] rounded-[25px] bg-[#F2F4FF] mt-[83px]">
+                        <div className="max-w-[350px] min-h-[274px] rounded-[25px] bg-[#F2F4FF] mt-[83px]
+                        max-xl:min-w-[300px]
+                        ">
                             <h5 className="font-semibold text-[16px] leading-[20px] text-[#091156] pt-[58px] pl-[50px]">Cloud Tags</h5>
 
                             <div className="flex max-w-[262px] mx-auto justify-between pt-[25px]">
@@ -268,11 +274,15 @@ function Blog() {
 
                        
 
-                        <div className="max-w-[350px] min-h-[213px] rounded-[25px] bg-[#F2F4FF] mt-[83px]">
+                        <div className="max-w-[350px] min-h-[213px] rounded-[25px] bg-[#F2F4FF] mt-[83px]
+                        max-xl:min-w-[300px]
+                        
+                        ">
                             <h5 className="font-semibold text-[16px] leading-[20px] text-[#091156] pt-[58px] pl-[48px]">Social Connect</h5>
 
                             <div className="flex pl-[54px] pt-[38px] gap-[39px]
-                            max-md:pl-[10px]
+                            max-xl:mx-auto
+                           
                             ">
 
                                 <img className="" src={contact1} alt="abc"></img>
@@ -288,10 +298,8 @@ function Blog() {
 
                     </div>
                 </div>
-            <div className="-mt-[7px]">
-                    {/* <Footer /> */}
-                    <LayoutFooter></LayoutFooter>
-                </div>
+           
+                </LayoutLanding1>
 
         </>
     )

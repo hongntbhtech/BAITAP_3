@@ -14,37 +14,63 @@ import play_button from "../../assests/Slider/play_button.png"
 
 // import Footer from "../../components/Footer";
 
-import LayoutHeader from '../../layout/LayoutHeader'
-import LayoutFooter from '../../layout/LayoutFooter'
+// import LayoutHeader from '../../layout/LayoutHeader'
+// import LayoutFooter from '../../layout/LayoutFooter'
 import React, { useState } from 'react';
+import LayoutLanding1 from "../../components/LayoutLanding1/LayoutLanding1"
 
-// import { useSelector, useDispatch } from 'react-redux';
-// import { visibleContent, hiddenContent } from '../Service/actions/service';
+const faqs = [
+    {
+        id: 1,
+        question: "Can I be beautiful in an instant time?",
+        answer: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna",
+            "Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla"
+        ]
+    },
+    {
+        id: 2,
+        question: "Can I be beautiful in an instant time?",
+        answer: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna",
+            "Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla"
+        ]
+    },
+    {
+        id: 3,
+        question: "Are there any side effects to the treatment methods or treatments at this clinic?",
+        answer: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna",
+            "Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla"
+        ]
+    },
+    {
+        id: 4,
+        question: "Do professionals have accreditation in their respective fields?",
+        answer: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna",
+            "Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla"
+        ]
+    }
+];
+
 function Service() {
-    // const [isActive, setIsActive] = useState(false); // Khởi tạo state
-
-    // const showHandler = () => {
-    //     setIsActive(true); // Hiển thị nội dung
-    // };
-
-    // const hideHandler = () => {
-    //     setIsActive(false); // Ẩn nội dung
-    // };
-
-    const [activeIndex, setActiveIndex] = useState(null); // Sử dụng index để theo dõi câu hỏi nào đang mở
+   
+    const [activeIndex, setActiveIndex] = useState(null); // Theo dõi câu hỏi đang mở
 
     const toggleHandler = (index) => {
         setActiveIndex(activeIndex === index ? null : index); // Mở/đóng câu hỏi
     };
-
     return (
         <>
+
+        <LayoutLanding1>
             <div className="max-xl:pl-[15px] max-xl:pr-[15px]">
                 <div className="max-w-screen-2xl font-poppins mx-auto">
                     {/* <Header/> */}
-                    <LayoutHeader></LayoutHeader>
+                    {/* <LayoutHeader></LayoutHeader> */}
                 </div>
-                <div className="max-w-[1148px] mx-auto pt-[118px] pl-[24px] pr-[24px]
+                <div className="max-w-[1188px] mx-auto pt-[118px] pl-[24px] pr-[24px]
                 ">
                     <div className="text-center">
                         <h4 className="font-semibold text-[16px] text-[#FF64AE] leading-[20px] max-md:text-[14px]">Our Services</h4>
@@ -56,22 +82,23 @@ function Service() {
                      max-xl:justify-center
                      max-xl:gap-[30px]
                      
+                     
                     ">
-                        <img className="object-cover" src={img_service1} alt="abc"></img>
-                        <img className="object-cover max-lg:pt-[20px]" src={img_service2} alt="abc"></img>
+                        <img className="max-xl:object-cover max-xl:w-full max-xl:max-w-[40%] max-xl:h-auto" src={img_service1} alt="abc"></img>
+                        <img className="max-xl:object-cover  max-xl:w-full max-xl:max-w-[40%] max-xl:h-auto max-xl:rounded-[40px] max-md:rounded-[15px] max-ssm:rounded-[10px]" src={img_service2} alt="abc"></img>
                     </div>
 
-                    <div className="flex flex-wrap justify-between pt-[74px] m-0 m-auto max-w-[1100px]
+                    <div className="flex flex-wrap justify-between pt-[69px] m-0 m-auto max-w-[1100px]
                      max-xl:justify-center
                      max-xl:gap-[30px]
                      
                     ">
-                        <img src={img_service3} alt="abc"></img>
-                        <img className="max-lg:pt-[20px]" src={img_service4} alt="abc"></img>
+                        <img className="max-xl:object-cover max-xl:w-full max-xl:max-w-[40%] h-auto max-xl:rounded-[40px] max-md:rounded-[15px] max-ssm:rounded-[10px]" src={img_service3} alt="abc"></img>
+                        <img className="max-xl:object-cover max-xl:w-full max-xl:max-w-[40%] max-xl:h-auto" src={img_service4} alt="abc"></img>
                     </div>
                 </div>
 
-                <div className='flex mx-auto max-w-[1185px] justify-between pt-[141px] pl-[24px] pr-[24p]
+                <div className='flex mx-auto max-w-[1185px] justify-between pt-[141px] pl-[24px] pr-[24px]
                 max-lg:flex-col max-lg:items-center
                 '>
                     <div className="">
@@ -92,7 +119,7 @@ function Service() {
                     </div>
                 </div>
 
-                <div className='flex mx-auto max-w-[1185px] justify-between pt-[141px] pl-[24px] pr-[24p]
+                <div className='flex mx-auto max-w-[1185px] justify-between pt-[91px] pl-[24px] pr-[24px]
                 max-lg:flex-col max-lg:items-center
                 '>
                     <div className='max-w-[475px] pt-[29px]
@@ -113,7 +140,7 @@ function Service() {
                     </div>
                 </div>
 
-                <div className='flex mx-auto max-w-[1185px] justify-between pt-[141px] pl-[24px] pr-[24px]
+                <div className='flex mx-auto max-w-[1185px] justify-between pt-[91px] pl-[24px] pr-[24px] pb-[130px]
                 max-lg:flex-col max-lg:items-center
                 '>
                     <div className="">
@@ -139,7 +166,7 @@ function Service() {
                      max-lg:flex-col max-lg:items-center
                      max-lg:pt-[20px]
                     ">
-                        <div className="max-w-[732px]
+                        <div className="max-w-[732px] max-lg:text-center
                         ">
                             <h1 className="font-semibold text-[36px] leading-[45px] text-[#ffffff] max-w-[570px] -tracking-[0.3px]  max-md:text-[33px] max-lg:max-w-none">Best responsibility and service for our customers</h1>
                             <p className="font-normal text-[16px] leading-[24px] text-[#CACACA] tracking-[1.6px] max-w-[570px] pt-[18px]  max-md:text-[14px] max-lg:max-w-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
@@ -148,7 +175,7 @@ function Service() {
                         <div className="flex max-w-[500px] pr-[58px] justify-between
                         max-lg:flex-col max-lg:items-center max-lg:pr-0
                         ">
-                            <img className="max-lg:w-full" src={play_button} alt="abc"></img>
+                            <img className="max-lg:w-[60%]" src={play_button} alt="abc"></img>
                             <p className="ml-[9px] font-semibold text-[16px] leading-[24px] tracking-[1.6px] text-[#ffffff] pt-[66px]
                             max-lg:pt-[4px]
                             ">Treatments Videos</p>
@@ -161,111 +188,50 @@ function Service() {
                 ">
                     <div className="text-center items-center">
                         <div className="pb-[15px]">
-                            <h1 className="font-semibold text-[36px] leading-[45px] text-[#091156] max-w-[640px] mx-auto pl-[13px] -tracking-[0.3px]">Services FAQ’s</h1>
+                            <h1 className="font-semibold text-[36px] leading-[45px] text-[#091156] max-w-[640px] mx-auto pl-[13px] -tracking-[0.3px] max-lg:pl-0">Services FAQ’s</h1>
                         </div>
                         <div className="w-[40px] h-[5px] bg-[#FF64AE] rounded-[5px] m-0 m-auto "></div>
                     </div>
 
-
-                    <div className="pt-[68px] flex justify-between max-w-[972px] pb-[12px]">
-                        <div className="font-semibold text-[16px] leading-[24px] tracking-[1.5px] text-[#091156] pl-[34px]">
-                            Is beauty consultation handled thoroughly?
-                        </div>
-                        <span onClick={() => toggleHandler(0)} className="text-[18px] text-[#091156] pl-[10px] pt-[0px] font-semibold pr-[25px]">
-                            {activeIndex === 0 ? 'v' : '^'}
-                        </span>
-                    </div>
-                    {activeIndex === 0 && (
-                        <>
-                            <div className="w-[100%] h-[1px] bg-[#091156] my-2"></div>
-                            <div className="max-w-[821px] mx-auto pt-[52px]">
-                                <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B]">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna
-                                </p>
-                                <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B] pt-[21px]">
-                                    porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla
-                                </p>
+                    <div className="min-h-[700px]">
+                    {faqs.map(({ id, question, answer }) => (
+                        <div key={id}>
+                            <div className="pt-[68px] flex justify-between max-w-[972px] pb-[12px]">
+                                <div className="font-semibold text-[16px] leading-[24px] tracking-[1.5px] text-[#091156] pl-[34px] max-lg:pl-0">
+                                    {question}
+                                </div>
+                                <span onClick={() => toggleHandler(id)} className="text-[18px] text-[#091156] pl-[10px] pt-[0px] font-semibold pr-[25px]">
+                                    {activeIndex === id ? 'v' : '^'}
+                                </span>
                             </div>
-                        </>
-                    )}
-
-                    <div className="pt-[68px] flex justify-between max-w-[972px] pb-[12px]">
-                        <div className="font-semibold text-[16px] leading-[24px] tracking-[1.5px] text-[#091156] pl-[34px]">
-                            Can I be beautiful in an instant time?
+                            {activeIndex === id && (
+                                <>
+                                    <div className="w-[100%] h-[1px] bg-[#091156] my-2"></div>
+                                    <div className="max-w-[821px] mx-auto pt-[52px]">
+                                        {answer.map((text, index) => (
+                                            <p key={index} className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B] pt-[21px]">
+                                                {text}
+                                            </p>
+                                        ))}
+                                    </div>
+                                </>
+                            )}
                         </div>
-                        <span onClick={() => toggleHandler(1)} className="text-[18px] text-[#091156] pl-[10px] pt-[0px] font-semibold pr-[25px]">
-                            {activeIndex === 1 ? 'v' : '^'}
-                        </span>
+                    ))}
                     </div>
-                    {activeIndex === 1 && (
-                        <>
-                            <div className="w-[100%] h-[1px] bg-[#091156] my-2"></div>
-                            <div className="max-w-[821px] mx-auto pt-[52px]">
-                                <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B]">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna
-                                </p>
-                                <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B] pt-[21px]">
-                                    porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla
-                                </p>
-                            </div>
-                        </>
-                    )}
-
-                    <div className="pt-[68px] flex justify-between max-w-[972px] pb-[12px]">
-                        <div className="font-semibold text-[16px] leading-[24px] tracking-[1.5px] text-[#091156] pl-[34px]">
-                            Are there any side effects to the treatment methods or treatments at this clinic?
-                        </div>
-                        <span onClick={() => toggleHandler(2)} className="text-[18px] text-[#091156] pl-[10px] pt-[0px] font-semibold pr-[25px]">
-                            {activeIndex === 2 ? 'v' : '^'}
-                        </span>
-                    </div>
-                    {activeIndex === 2 && (
-                        <>
-                            <div className="w-[100%] h-[1px] bg-[#091156] my-2"></div>
-                            <div className="max-w-[821px] mx-auto pt-[52px]">
-                                <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B]">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna
-                                </p>
-                                <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B] pt-[21px]">
-                                    porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla
-                                </p>
-                            </div>
-                        </>
-                    )}
-
-                    <div className="pt-[68px] flex justify-between max-w-[972px] pb-[12px]">
-                        <div className="font-semibold text-[16px] leading-[24px] tracking-[1.5px] text-[#091156] pl-[34px]">
-                            Do professionals have accreditation in their respective fields?
-                        </div>
-                        <span onClick={() => toggleHandler(3)} className="text-[18px] text-[#091156] pl-[10px] pt-[0px] font-semibold pr-[25px]">
-                            {activeIndex === 3 ? 'v' : '^'}
-                        </span>
-                    </div>
-                    {activeIndex === 3 && (
-                        <>
-                            <div className="w-[100%] h-[1px] bg-[#091156] my-2"></div>
-                            <div className="max-w-[821px] mx-auto pt-[52px]">
-                                <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B]">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna
-                                </p>
-                                <p className="font-normal italic text-[14px] leading-[21px] tracking-[1.45px] text-[#8B8B8B] pt-[21px]">
-                                    porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla
-                                </p>
-                            </div>
-                        </>
-                    )}
-
-
-
-
 
 
                 </div>
 
+
             </div>
 
             {/* <Footer/> */}
-            <LayoutFooter></LayoutFooter>
+            {/* <div className="-mt [98px]">
+                <LayoutFooter ></LayoutFooter>
+            </div> */}
+
+            </LayoutLanding1>
         </>
     )
 }

@@ -15,6 +15,13 @@ import contact2 from '../../assests/Footer/twitter.png';
 import { List, List1 } from './FooterStyled'
 import { Link } from 'react-router-dom';
 
+const contact_icon = [
+    { id: 1, src: contact1, alt: "Contact 1" },
+    { id: 2, src: contact2, alt: "Contact 2" },
+    { id: 3, src: contact3, alt: "Contact 3" },
+    { id: 4, src: contact4, alt: "Contact 4" },
+    { id: 5, src: contact5, alt: "Contact 5" },
+];
 
 function Footer() {
     // const scrollToTop = () => {
@@ -81,19 +88,19 @@ function Footer() {
                                 <h3 className='text-[18px] font-semibold leading-[27px] tracking-[1.8px] text-white max-md:text-[14px]'>Pages</h3>
                                 <ul className='pt-[20px]'>
                                     <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>
-                                        <Link to='/'>Home</Link>
+                                        <Link onClick={scrollToTop} to='/'>Home</Link>
                                     </List>
                                     <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>
-                                        <Link to='/about'>About</Link>
+                                        <Link onClick={scrollToTop} to='/about'>About</Link>
                                     </List>
                                     <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>
-                                        <Link to='/service'>Services</Link>
+                                        <Link onClick={scrollToTop} to='/service'>Services</Link>
                                     </List>
                                     <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>
-                                        <Link to='/gallery'>Gallery</Link>
+                                        <Link onClick={scrollToTop} to='/gallery'>Gallery</Link>
                                     </List>
                                     <List className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>
-                                        <Link to='/team'>Team</Link>
+                                        <Link onClick={scrollToTop} to='/team'>Team</Link>
                                     </List>
                                 </ul>
                             </div>
@@ -104,10 +111,10 @@ function Footer() {
                                     <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none  max-md:text-[12px]'>Terms & conditions</List1>
                                     <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>Privacy policy</List1>
                                     <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>
-                                        <Link to='/blog'>Blog</Link>
+                                        <Link onClick={scrollToTop} to='/blog'>Blog</Link>
                                     </List1>
                                     <List1 className='text-[16px] font-normal tracking-[1.8px] text-[#d7dbff] list-none max-md:text-[12px]'>
-                                        <Link to='/contact'>Contact</Link>
+                                        <Link onClick={scrollToTop} to='/contact'>Contact</Link>
                                     </List1>
                                 </ul>
                             </div>
@@ -140,11 +147,15 @@ function Footer() {
                         max-md:flex-col max-md:justify-center max-md:pt-[50px]
                         '>
                             <div className='flex gap-[45px] max-lg:gap-[25px] max-md:text-center max-md:m-0 max-md:m-auto'>
-                                <img src={contact1} alt='abc'></img>
+                                {/* <img src={contact1} alt='abc'></img>
                                 <img src={contact2} alt='abc'></img>
                                 <img src={contact3} alt='abc'></img>
                                 <img src={contact4} alt='abc'></img>
-                                <img src={contact5} alt='abc'></img>
+                                <img src={contact5} alt='abc'></img> */}
+
+                                {contact_icon.map((contact) => (
+                                    <img key={contact.id} src={contact.src} alt={contact.alt} />
+                                ))}
                             </div>
 
 

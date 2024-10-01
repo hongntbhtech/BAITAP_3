@@ -12,18 +12,21 @@ import img_gallery9 from "../../assests/Gallery/unsplash_4SUyx4KQ5Ik.png"
 
 import bg_gallery from "../../assests/Gallery/unsplash_eflLpWC1Geo.png"
 import play_button from "../../assests/Slider/play_button.png"
+import LayoutLanding1 from "../../components/LayoutLanding1/LayoutLanding1"
 // import Footer from "../../components/Footer";
 
-import LayoutHeader from '../../layout/LayoutHeader'
-import LayoutFooter from '../../layout/LayoutFooter'
+// import LayoutHeader from '../../layout/LayoutHeader'
+// import LayoutFooter from '../../layout/LayoutFooter'
 
 function Gallery() {
     return (
         <>
+
+        <LayoutLanding1>
             <div className="max-xl:pl-[15px] max-xl:pr-[15px]">
             <div className="max-w-screen-2xl font-poppins mx-auto">
                 {/* <Header /> */}
-                <LayoutHeader></LayoutHeader>
+                {/* <LayoutHeader></LayoutHeader> */}
                 </div>
 
                 <div className="max-w-[1188px] mx-auto pt-[118px] pb-[124px] pl-[24px] pr-[24px]">
@@ -119,7 +122,8 @@ function Gallery() {
                 
             </div>
             {/* <Footer/> */}
-            <LayoutFooter></LayoutFooter>
+            {/* <LayoutFooter></LayoutFooter> */}
+            </LayoutLanding1>
         </>
     )
 }

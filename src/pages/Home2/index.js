@@ -68,8 +68,8 @@ function Home2() {
             <div className=''>
 
                 <div className=' h-[918px] bg-no-repeat 2xl:bg-cover' style={{ backgroundImage: `url(${background})` }}>
-                    <header className='max-w-screen-2xl font-poppins mx-auto sticky top-0'>
-                        <div className='max-w-[1188px] mx-auto flex pl-[20px] pr-[24px] justify-between pt-[41px]'>
+                    <header className='max-w-screen-2xl font-poppins mx-auto'>
+                        <div className='max-w-[1188px] mx-auto flex pl-[24px] pr-[24px] justify-between pt-[41px]'>
                             <div>
                                 <img className='max-lg:w-[100%]' src={logo} alt="abc" />
                             </div>
@@ -102,16 +102,16 @@ function Home2() {
 
 
                                     <li className="max-lg:w-[100%] max-lg:text-center max-lg:border-b max-lg:border-gray-300 max-lg:pb-2">
-                                        <Link to='/about' className='my-1 mx-2 no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#fff] -ml-[6px] max-lg:text-[#8b8b8b]'>About</Link>
+                                        <Link to='/about' className='max-lg:my-1 max-lg:mx-2 no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#fff] -ml-[6px] max-lg:text-[#8b8b8b]'>About</Link>
                                     </li>
                                     <li className="max-lg:w-[100%] max-lg:text-center max-lg:border-b max-lg:border-gray-300 max-lg:pb-2">
-                                        <Link to='/service' className='my-1 mx-2 no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#fff] max-lg:text-[#8b8b8b]'>Service</Link>
+                                        <Link to='/service' className='max-lg:my-1 max-lg:mx-2 no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#fff] max-lg:text-[#8b8b8b]'>Service</Link>
                                     </li>
                                     <li className="max-lg:w-[100%] max-lg:text-center max-lg:border-b max-lg:border-gray-300 max-lg:pb-2">
-                                        <Link to='/gallery' className='my-1 mx-2 no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#fff] max-lg:text-[#8b8b8b]'>Gallery</Link>
+                                        <Link to='/gallery' className='max-lg:my-1 max-lg:mx-2 no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#fff] max-lg:text-[#8b8b8b]'>Gallery</Link>
                                     </li>
                                     <li className="max-lg:w-[100%] max-lg:text-center max-lg:border-b max-lg:border-gray-300 max-lg:pb-2">
-                                        <Link to='/blog' className='my-1 mx-2 no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#fff] max-lg:text-[#8b8b8b]'>Blog</Link>
+                                        <Link to='/blog' className='max-lg:my-1 max-lg:mx-2 no-underline text-base font-medium leading-[24px] tracking-[1.6px] text-[#fff] max-lg:text-[#8b8b8b]'>Blog</Link>
                                     </li>
                                     <li className='pl-[8px] pt-[1px] max-lg:w-[100%] max-lg:text-center max-lg:pb-[50px] max-lg:border-b max-lg:border-gray-300 max-lg:pb-2'>
                                         <Link to='/contact' className='py-3.5 px-10 bg-[#FF64AE] rounded-full text-white text-base tracking-[1.6px] font-semibold'>Contact</Link>
@@ -190,7 +190,7 @@ function Home2() {
                     </div>
                 </div>
 
-                <div className='pt-[160px] pb-[127px]'>
+                <div className='pt-[160px] pb-[127px] max-w-[1188px] mx-auto pl-[24px] pr-[24px]'>
                     <div className='max-w-[964px] m-0 m-auto text-center pl-[24px] pr-[24px]'>
                         <h4 className='text-[16px] font-semibold leading-[20px] text-[#ff64ae] max-md:text-[14px] '>Main Services</h4>
                         <h1 className='text-[36px] font-semibold leading-[45px] text-[#091156] max-w-[450px] m-0 m-auto pt-[12px]
@@ -205,7 +205,7 @@ function Home2() {
                      max-xl:justify-center
                      max-xl:gap-[30px]
                     '>
-                        <ServiveBoxMain className='' >
+                        <ServiveBoxMain className='max-xl:mt-[30px]' >
                             <ImgBox src={icon_2} alt='abc'></ImgBox>
                             <Heading>Beauty consultation</Heading>
                             <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing.</Paragraph>

@@ -52,18 +52,18 @@ ${tw`w-[100%]`}
 
 
 export const HeadingBlog = styled.h3`
-${tw`text-[18px] font-semibold leading-[22.5px] text-[#091156]  pt-[56px] pl-[37px] pr-[10px]`}
+${tw`text-[18px] font-semibold leading-[22.5px] text-[#091156]  pt-[56px] pl-[37px] pr-[10px] text-left`}
 
 `;
 
 
 export const ParagraphBlog = styled.p`
-${tw`text-[14px] font-normal leading-[21px] text-[#8b8b8b] tracking-[1.4px] pt-[14px] pl-[37px] pr-[37px]`}
+${tw`text-[14px] font-normal leading-[21px] text-[#8b8b8b] tracking-[1.4px] pt-[14px] pl-[37px] pr-[37px] text-left`}
 
 `;
 
 export const Button = styled.button`
-${tw`text-[14px] font-semibold leading-[17.5px] text-[#FF64AE] pt-[24px] pl-[39px] `}
+${tw`text-[14px] font-semibold leading-[17.5px] text-[#FF64AE] pt-[24px]`}
 
 
  &::after {
