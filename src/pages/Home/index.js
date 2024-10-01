@@ -30,7 +30,9 @@ function Home() {
             <div className="bg-no-repeat" style={{ backgroundImage: `url(${bg_slider})` }}>
                 <LayoutHeader>
                     <div className=''>
-                        <div className='max-w-[1181px] mx-auto flex justify-between pl-[58px] pr-[24px] pt-[205px]
+                        <div className='max-w-[1188px] flex justify-between pl-[24px] pr-[24px] pt-[205px] mr-[129px] ml-[165px]
+                            max-xxl:m-0 max-xxl:m-auto max-xxl:ml-[10px] max-xxl:gap-[30px]
+                            max-lg:ml-0
                             max-lg:flex-col max-lg:items-center
                             max-lg:pl-[24px]
                         '>
@@ -72,7 +74,7 @@ function Home() {
                 </LayoutHeader>
 
             </div>
-            <div className='max-w-[1488px] font-poppins mx-auto pl-[24px] pr-[24px]'>
+            <div className='max-w-[1188px] font-poppins mx-auto pl-[24px] pr-[24px]'>
                 <div className='text-center pt-[131px] max-w-[850px] m-0 m-auto'>
                     <h4 className='text-[16px] font-semibold leading-[20px] text-[#ff64ae] max-md:text-[14px] '>Main Services</h4>
                     <h1 className='text-[36px] font-semibold leading-[45px] text-[#091156] max-w-[450px] m-0 m-auto pt-[12px]
@@ -160,7 +162,9 @@ function Home() {
                     </div>
 
 
-                    <div className='max-w-[520px]'>
+                    <div className='max-w-[520px]
+                    max-lg:max-w-none max-lg:text-center
+                    '>
                         <h5 className='text-[16px] font-semibold leading-[20px] text-[#ff64ae]'>Contact Us</h5>
                         <h1 className='text-[36px] font-semibold leading-[45px] text-[#091156] -tracking-[0.3px] w-[71%] pt-[12px] max-xl:w-full'>Send your inquiry to our expert team</h1>
                         <p className='text-[16px] font-normal leading-[24px] tracking-[1.6px] text-[#8b8b8b] pt-[19px]'>Lorem ipsum dolor sit amet nulla turapis tellus.</p>

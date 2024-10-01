@@ -9,7 +9,7 @@ import { ProteamsBoxMain, ImgBox, Heading,Heading1, Para, SocialMedia, SocialMed
 function Proteams(){
     return(
         <>
-            <div className='max-w-[1133px] mx-auto font-poppins pl-[24px] pr-[24px] -mt-[17px]'>
+            <div className='max-w-[1188px] mx-auto font-poppins pl-[24px] pr-[24px] -mt-[17px]'>
                 <div className='text-center pt-[71px] max-w-[850px] m-0 m-auto'>
                     <h4 className='text-[16px] font-semibold leading-[20px] text-[#ff64ae]
                     max-md:text-[14px]'>Professional Teams</h4>
