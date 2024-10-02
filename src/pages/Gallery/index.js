@@ -122,11 +122,7 @@ function Gallery() {
             </div>
 
             </LayoutLanding1>
-            {/* <Footer/> */}
-           {/* <div className="-mt-[50px]">
-           <LayoutFooter></LayoutFooter>
-           </div> */}
-         
+            
         </>
     )
 }
