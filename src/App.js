@@ -12,26 +12,30 @@ import Blog from './pages/Blog';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
 // Create the Redux store
 const store = createStore(rootReducer);
+const queryClient = new QueryClient();
 
 function App() {
   return (
-    <Provider store={store}>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/home' element={<Home2 />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/service' element={<Service />} />
-        <Route path='/gallery' element={<Gallery />} />
-        <Route path='/team' element={<Team />} />
-        <Route path='/blog' element={<Blog />} />
-        <Route path='/contact' element={<Contact />} />
+    <QueryClientProvider client={queryClient}>
+      <Provider store={store}>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/home' element={<Home2 />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/service' element={<Service />} />
+          <Route path='/gallery' element={<Gallery />} />
+          <Route path='/team' element={<Team />} />
+          <Route path='/blog' element={<Blog />} />
+          <Route path='/contact' element={<Contact />} />
 
-        <Route path='/login' element={<Login/>}/>
-      </Routes>
-    </Provider>
+          <Route path='/login' element={<Login />} />
+        </Routes>
+      </Provider>
+    </QueryClientProvider>
   );
 }
 
