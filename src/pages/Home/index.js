@@ -26,9 +26,6 @@ import { useState } from 'react';
 
 
 function Home() {
-
-    
-
     return (
         <>
             {/* <LayoutLanding1> */}
