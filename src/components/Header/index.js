@@ -2,11 +2,17 @@ import { Link } from 'react-router-dom';
 import logo from '../../assests/Header/Header_Logo.png';
 import { FaAlignJustify, FaTimes } from 'react-icons/fa';
 import React, { useState, useEffect, useRef } from 'react';
+import { Avatar, Typography } from "@material-tailwind/react";
+
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const menuRef = useRef(null);
+    const [user, setUser] = useState({
+        username: "",
+        name: ""
+    });
 
     const handleClick = () => setMenuOpen(prevMenuOpen => !prevMenuOpen);
 
@@ -22,7 +28,7 @@ function Header() {
     useEffect(() => {
         document.addEventListener('mousedown', handleOutsideClick);
         return () => {
-            document.removeEventListener('mousedown', handleOutsideClick);
+            document.removeEventListener('mousedown', handleOutsideClick); //??
         };
     }, [menuOpen, isOpen]);
 
@@ -30,6 +36,16 @@ function Header() {
         event.stopPropagation(); // Ngăn chặn sự kiện truyền lên các phần tử cha
         setIsOpen(prev => !prev);
     };
+
+
+    useEffect(() => {
+        const items = JSON.parse(localStorage.getItem('users'));
+        if (items) {
+            setUser(items);
+        }
+    }, []);
+
+    console.log(user);
 
     return (
         <>
@@ -47,7 +63,7 @@ function Header() {
                                 <div className={`absolute left-1/2 max-lg:left-2/3 transform -translate-x-1/2 mt-2 w-[150px] bg-white rounded-md shadow-lg transition-opacity duration-300 ${isOpen ? 'block' : 'hidden'} max-lg:z-10`}>
                                     <ul>
                                         <li>
-                                            <Link to='/' className='block px-4 py-2 text-base text-[#8B8B8B] hover:bg-[#FF64AE] hover:text-white rounded-md'>
+                                            <Link to='/homemain' className='block px-4 py-2 text-base text-[#8B8B8B] hover:bg-[#FF64AE] hover:text-white rounded-md'>
                                                 Home1
                                             </Link>
                                         </li>
@@ -86,6 +102,25 @@ function Header() {
                     <div className='text-[25px] lg:hidden cursor-pointer pt-[18px]' onClick={handleClick}>
                         {menuOpen ? <FaTimes /> : <FaAlignJustify />}
                     </div>
+
+                    <div>
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12 20a7.966 7.966 0 0 1-5.002-1.756l.002.001v-.683c0-1.794 1.492-3.25 3.333-3.25h3.334c1.84 0 3.333 1.456 3.333 3.25v.683A7.966 7.966 0 0 1 12 20ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10c0 5.5-4.44 9.963-9.932 10h-.138C6.438 21.962 2 17.5 2 12Zm10-5c-1.84 0-3.333 1.455-3.333 3.25S10.159 13.5 12 13.5c1.84 0 3.333-1.455 3.333-3.25S13.841 7 12 7Z" clip-rule="evenodd" />
+                        </svg>
+                        <div className="flex items-center gap-4">
+                            {user &&
+                                <>
+                                    <Avatar src="https://docs.material-tailwind.com/img/face-2.jpg" alt="avatar" />
+                                    <div>
+                                        <Typography variant="h6">{user.username}</Typography>
+                                        <Typography variant="small" color="gray" className="font-normal">
+                                             {user.name}
+                                        </Typography>
+                                    </div>
+                                </>}
+                        </div>
+
+                    </div>
                 </div>
             </header>
         </>
@@ -93,3 +128,4 @@ function Header() {
 }
 
 export default Header;
+

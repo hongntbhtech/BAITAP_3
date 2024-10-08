@@ -19,12 +19,16 @@ import bg_slider from '../../assests/Slider/bg_slide.png'
 
 import bg_about from '../../assests/About/bg_about.png'
 import bg_contact from '../../assests/Contact/bg_contact.png'
+import { useState } from 'react';
 // import LayoutLanding1 from '../../components/LayoutLanding1/LayoutLanding1';
 
 
 
 
 function Home() {
+
+    
+
     return (
         <>
             {/* <LayoutLanding1> */}
